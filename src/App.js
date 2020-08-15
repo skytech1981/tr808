@@ -6,73 +6,74 @@ import './App.css';
 function App() {
 
 
- const [count,setCount] = useState(0)
- const [theme,setTheme] = useState(0)
+const [theme,setTheme] = useState('')
+const [color,setColor] = useState('white')
 
-function decrementCount()
+
+function box1()
 {
-  setCount(prevCount => theme - 1 )
-  setTheme(theme-1)
+    setTheme(theme + "  ")
+    setPlay()
+   }
+function box2()
+{
+    setTheme(theme + "  ")
 }
-function incrementCount()
+function box3()
 {
-  setCount(prevCount => theme + 1 )
-  setTheme(theme+1)
+    setTheme(theme + "  ")
 }
-function multiplyCount()
+function box4()
 {
-  setCount(prevCount => theme * 2 )
-  setTheme(theme * 2)
+    setTheme(theme + "  ")
 }
-function divideCount()
+function box5()
 {
-  setCount(prevCount => theme / 2 )
-  setTheme(theme / 2)
+    setTheme(theme + "  ")
 }
-function reset()
+function box6()
 {
-  setCount(prevCount => theme * 0 )
-  setTheme('')
+    setTheme(theme + "  ")
 }
-function num1()
+function box7()
 {
-    setTheme(theme + 1)
+    setTheme(theme + "  ")
 }
-function num2()
+function box8()
 {
-  setTheme(theme + 2)
+    setTheme(theme + "  ")
 }
-function num3()
+function box9()
 {
-  setTheme(theme + 3)
+    setTheme(theme + "  ")
+   }
+function box10()
+{
+    setTheme(theme + "  ")
 }
-function num4()
+function box11()
 {
-  setTheme(theme + 4)
+    setTheme(theme + "  ")
 }
-function num5()
+function box12()
 {
-  setTheme(theme + 5)
+    setTheme(theme + "  ")
 }
-function num6()
+function box13()
 {
-  setTheme(theme + 6)
+    setTheme(theme + "  ")
 }
-function num7()
+function box14()
 {
-  setTheme(theme + 7)
+    setTheme(theme + "  ")
 }
-function num8()
+function box15()
 {
-  setTheme(theme + 8)
+    setTheme(theme + "  ")
 }
-function num9()
+function box16()
 {
-  setTheme(theme + 9)
-}
-function num0()
-{
-  setTheme(theme + 0)
+    setTheme(theme + "  ")
 }
 
 
@@ -84,31 +85,81 @@ function num0()
     <div className="App">
       <header className="App-header">
         <div className="bord"><img src={logo} className="App-logo" alt="logo" /> </div>
-        <img src={logo2} className="App-logo2" alt="logo" /> 
-        <h1 className="counter">counter</h1>
-        <span className="count"> {theme} </span>
-       <div className="box">
-        <button onClick={decrementCount}>-</button>
-        <button onClick={incrementCount}>+</button>
-        <button onClick={multiplyCount}>*</button>
-        <button onClick={divideCount}>/</button>
-        <button onClick={num1}>1</button>
-        <button onClick={num2}>2</button>
-        <button onClick={num3}>3</button>
-        <button onClick={num4}>4</button>
-        <button onClick={num5}>5</button>
-        <button onClick={num6}>6</button>
-        <button onClick={num7}>7</button>
-        <button onClick={num8}>8</button>
-        <button onClick={num9}>9</button>
-        <button onClick={num0}>0</button>
-
-
-
-
-
-        <button className="reset" onClick={reset}>reset</button>
-        
+        <div className="boxes">
+        <span>{theme}</span>
+        <button className="box1" onClick={box1}/>
+        <button className="box2" onClick={box2}/>
+        <button className="box3" onClick={box3}/>
+        <button className="box4" onClick={box4}/>
+        <button className="box5" onClick={box5}/>
+        <button className="box6" onClick={box6}/>
+        <button className="box7" onClick={box7}/>
+        <button className="box8" onClick={box8}/>
+        <button className="box9" onClick={box9}/>
+        <button className="box10" onClick={box10}/>
+        <button className="box11" onClick={box11}/>
+        <button className="box12" onClick={box12}/>
+        <button className="box13" onClick={box13}/>
+        <button className="box14" onClick={box14}/>
+        <button className="box15" onClick={box15}/>
+        <button className="box16" onClick={box16}/>
+        </div>
+        <div className="Sboxes">
+        <span>{theme}</span>
+        <button className="Sbox1" onClick={box1}/>
+        <button className="Sbox2" onClick={box2}/>
+        <button className="Sbox3" onClick={box3}/>
+        <button className="Sbox4" onClick={box4}/>
+        <button className="Sbox5" onClick={box5}/>
+        <button className="Sbox6" onClick={box6}/>
+        <button className="Sbox7" onClick={box7}/>
+        <button className="Sbox8" onClick={box8}/>
+        <button className="Sbox9" onClick={box9}/>
+        <button className="Sbox10" onClick={box10}/>
+        <button className="Sbox11" onClick={box11}/>
+        <button className="Sbox12" onClick={box12}/>
+        <button className="Sbox13" onClick={box13}/>
+        <button className="Sbox14" onClick={box14}/>
+        <button className="Sbox15" onClick={box15}/>
+        <button className="Sbox16" onClick={box16}/>
+        </div>
+        <div className="Hboxes">
+        <span>{theme}</span>
+        <button className="Hbox1" onClick={box1}/>
+        <button className="Hbox2" onClick={box2}/>
+        <button className="Hbox3" onClick={box3}/>
+        <button className="Hbox4" onClick={box4}/>
+        <button className="Hbox5" onClick={box5}/>
+        <button className="Hbox6" onClick={box6}/>
+        <button className="Hbox7" onClick={box7}/>
+        <button className="Hbox8" onClick={box8}/>
+        <button className="Hbox9" onClick={box9}/>
+        <button className="Hbox10" onClick={box10}/>
+        <button className="Hbox11" onClick={box11}/>
+        <button className="Hbox12" onClick={box12}/>
+        <button className="Hbox13" onClick={box13}/>
+        <button className="Hbox14" onClick={box14}/>
+        <button className="Hbox15" onClick={box15}/>
+        <button className="Hbox16" onClick={box16}/>
+        </div>
+        <div className="Cboxes">
+        <span>{theme}</span>
+        <button className="Cbox1" onClick={box1}/>
+        <button className="Cbox2" onClick={box2}/>
+        <button className="Cbox3" onClick={box3}/>
+        <button className="Cbox4" onClick={box4}/>
+        <button className="Cbox5" onClick={box5}/>
+        <button className="Cbox6" onClick={box6}/>
+        <button className="Cbox7" onClick={box7}/>
+        <button className="Cbox8" onClick={box8}/>
+        <button className="Cbox9" onClick={box9}/>
+        <button className="Cbox10" onClick={box10}/>
+        <button className="Cbox11" onClick={box11}/>
+        <button className="Cbox12" onClick={box12}/>
+        <button className="Cbox13" onClick={box13}/>
+        <button className="Cbox14" onClick={box14}/>
+        <button className="Cbox15" onClick={box15}/>
+        <button className="Cbox16" onClick={box16}/>
         </div>
        </header>
     </div>

@@ -14,12 +14,7 @@
   opacity: 0.5;
 }
 
-.App-logo2 {
 
-  height: 20vmin;
-  pointer-events: none;
-  opacity: 0.2;
-}
 
 
 @media (prefers-reduced-motion: no-preference) {
@@ -44,8 +39,8 @@
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  width:50%;
-  margin-left: 25%;
+  width:60%;
+  margin-left: 20%;
   border-radius: 20px;
   box-shadow: 10px 10px 21px 3px rgba(0,0,0,0.75);
 
@@ -54,23 +49,77 @@
 
 
 
-.box
+.boxes
 {
 
 display: flex;
 justify-content: center;
+align-items: center;
 flex-wrap: wrap;
-width: 240px;
+width: 80%;
+border: 2px solid black;
+border-radius: 8px;
+margin: 10px 10px;
+height: 40px;
+background-image: linear-gradient(grey,white,grey);
 }
 
-.count
+.Sboxes
+{
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+width: 80%;
+border: 2px solid black;
+border-radius: 8px;
+margin: 10px 10px;
+height: 40px;
+background-image: linear-gradient(grey,rgb(251, 179, 111),grey);
+}
+.Hboxes
+{
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+width: 80%;
+border: 2px solid black;
+border-radius: 8px;
+margin: 10px 10px;
+height: 40px;
+background-image: linear-gradient(grey,rgb(246, 109, 109),grey);
+}
+.Cboxes
+{
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+width: 80%;
+border: 2px solid black;
+border-radius: 8px;
+margin: 10px 10px;
+height: 40px;
+background-image: linear-gradient(grey,rgb(236, 232, 19),grey);
+}
+
+
+
+
+
+
+.border
 {
 color: black;
 margin-bottom: 10px;
 width: 75%;
-height: 40px;
+height: 80px;
 border: 2px solid black;
-background-color: yellow;
+
 border-radius: 5px;
 
 
@@ -104,13 +153,15 @@ border-radius: 5px;
 
 button
 {
-  width: 50px;
-  margin: 5px;
+  width: 40px;
+  height: 20px;
+  margin: 0px 3px;
 font-size: 30px;
 padding: 10px;
-border-radius: 20px;
+border-radius: 4px;
 cursor: pointer;
 outline: none;
+
 
 }
 
@@ -139,4 +190,17 @@ text-shadow: 3px 3px 0px  rgb(0, 0, 0) ;
 display: flex;
 flex-wrap: wrap;
 
+}
+
+
+button
+{
+
+background-image: radial-gradient(rgb(56, 53, 53),black);
+}
+
+
+button:active
+{
+  background-image: radial-gradient(rgb(137, 231, 15)50%,black);
 }
