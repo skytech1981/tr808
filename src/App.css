@@ -252,7 +252,7 @@ font-size: 45px;
   justify-content: space-evenly;
   list-style: none;
 background-image: linear-gradient(grey,rgb(255, 255, 255));
-padding: 10px;
+padding: 5px;
   
 }
 
@@ -260,6 +260,7 @@ li
 {
 
 font-size: 35px;
+
 }
 .img
 {
@@ -269,7 +270,7 @@ font-size: 35px;
   justify-content: center;
 }
 
-h3
+h2
 {
   width: 50%;
   max-width: 100%;
