@@ -246,3 +246,18 @@ font-size: 45px;
 
 
 }
+.menulist
+{
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+background-image: linear-gradient(grey,rgb(255, 255, 255));
+padding: 10px;
+  
+}
+
+li
+{
+
+font-size: 35px;
+}
