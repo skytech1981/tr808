@@ -8,8 +8,8 @@ function Home() {
 
 
   return (
-    <div className="App">
-     hello this is Home page
+    <div className="homepage">
+     <p>Hello everybody this is my Home page</p>
     </div>
   );
 }

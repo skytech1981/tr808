@@ -81,8 +81,8 @@ function box16()
 
   return (
     <div className="App">
-      <header className="App-header">
-        <div className="bord"> </div>
+      <header className="App-header"><p className="beatboxTitle">Modern BeatBox</p>
+        <div className="bord"></div>
         <div className="boxes">
         <span>{theme}</span>
         <button className="box1" onClick={box1}/>

@@ -8,7 +8,7 @@ import About from './pages/about';
 function App() {
 
   return (
-    <div className="homepage">
+    <div className="main">
       <Home/>
       <About/>
        <Beatbox/>

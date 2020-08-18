@@ -205,10 +205,44 @@ button:active
   background-image: radial-gradient(rgb(137, 231, 15)50%,black);
 }
 
+.main
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+
+
 .homepage
 {
+  background-color: #06627c;
+  height: 940px;
+}
+
+.aboutpage
+{
+  background-color: #10a3cc;
+  height: 940px;
+}
 
 
+p
+{
+  display: flex;
+justify-content: center;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 35px;
 
-  
+}
+
+.beatboxTitle
+{
+  text-shadow: 5px 5px 5px rgba(150, 150, 150, 1);
+  letter-spacing: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+color: rgb(31, 9, 238);
+font-size: 45px;
+
+
 }

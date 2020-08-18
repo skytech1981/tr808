@@ -6,8 +6,8 @@ function About() {
 
 
   return (
-    <div className="App">
-     hello this is About Page
+    <div className="aboutpage">
+    <p> Hello Welcome To The About Page</p>
     </div>
   );
 }
