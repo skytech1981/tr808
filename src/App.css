@@ -217,13 +217,14 @@ justify-content: center;
 .homepage
 {
   background-image: linear-gradient(rgb(18, 6, 90),rgb(33, 12, 151)10%,rgb(136, 134, 146)50%,rgb(9, 3, 39));
-  height: 100vh;
+  height: 90vh;
   
 }
 
 .aboutpage
 {
-  background-image: linear-gradient(rgb(15, 231, 195),rgb(253, 253, 253)50%,rgb(40, 220, 226));
+  background-image: linear-gradient(rgb(18, 6, 90),rgb(33, 12, 151)10%,rgb(136, 134, 146)50%,rgb(9, 3, 39));
+ margin: 0;
   height: 940px;
 }
 
@@ -260,10 +261,11 @@ padding: 5px;
 
 nav ul li
 {
-
+ 
+margin-top: 10px;
 font-family: Arial, Helvetica, sans-serif;
 font-size: 35px;
-
+text-shadow: 5px 5px 5px rgb(44, 38, 38);
 }
 .img
 {
@@ -286,7 +288,7 @@ h2
 
 .sequence
 {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -303,4 +305,18 @@ font-size: 35px;
 color: white;
 letter-spacing: 2px;
 
+}
+
+.about-title
+{
+  font-size: 35px;
+color: white;
+letter-spacing: 2px;
+}
+
+.about-Desc
+{
+  width: 80%;
+  margin: auto;
+  font-size: 35px;
 }
