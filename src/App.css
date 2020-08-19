@@ -290,15 +290,17 @@ h2
 
 .sequence
 {
+  
   height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  border:10px solid brown;
+  background-color: rgb(23, 23, 48);
+  border:10px solid rgb(11, 2, 32);
 }
 input[type=checkbox] {
-  margin:10px;
-  transform: scale(1.5,);
+  margin:20px;
+  transform: scale(2.8);
 }
 
 .home-title

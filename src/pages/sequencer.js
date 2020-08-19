@@ -37,7 +37,6 @@ function Sequencer() {
 
     return (
         <div className="sequence">
-          <button></button>
         <div className="kick">
         <input type="checkbox"></input>
         <input type="checkbox"></input>
