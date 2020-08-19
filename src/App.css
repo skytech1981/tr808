@@ -282,3 +282,11 @@ h2
   margin-left: 25%;
   text-shadow: 5px 5px 5px rgba(150, 150, 150, 1);
 }
+
+.sequence
+{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
