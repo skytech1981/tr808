@@ -11,6 +11,8 @@ import Sequencer from './pages/sequencer';
 
 function App() {
 
+  
+
   return (
     <Router>
      
