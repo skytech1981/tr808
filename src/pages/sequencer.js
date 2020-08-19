@@ -20,8 +20,8 @@ function Sequencer() {
 
     function repeat(){
       let step = index % 8;
-      let kickInputs = document.querySelector('.kick input:nth-child(${step + 1})');
-      let snareInputs = document.querySelector('.snare input:nth-child(${step + 1})');
+      const kickInputs = document.querySelector('.kick input:nth-child(${step + 1})');
+      const snareInputs = document.querySelector('.snare input:nth-child(${step + 1})');
       if (kickInputs.checked){
         kick.start();
       }
@@ -37,6 +37,7 @@ function Sequencer() {
 
     return (
         <div className="sequence">
+          <button></button>
         <div className="kick">
         <input type="checkbox"></input>
         <input type="checkbox"></input>

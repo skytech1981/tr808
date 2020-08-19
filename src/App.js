@@ -18,10 +18,10 @@ function App() {
      
    <nav>
      <ul className="menulist">
-         <li><Link to="/home">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/beatbox">Beatbox</Link></li>
-        <li><Link to="/Sequencer">Sequencer</Link></li>
+         <li className="li"><Link to="/home" style={{paddingLeft: 13, textDecoration: 'none'}}>Home</Link></li>
+        <li className="li"><Link to="/about" style={{paddingLeft: 13, textDecoration: 'none'}}>About</Link></li>
+        <li className="li"><Link to="/beatbox" style={{paddingLeft: 13, textDecoration: 'none'}}>Beatbox</Link></li>
+        <li className="li"><Link to="/Sequencer" style={{paddingLeft: 13, textDecoration: 'none'}}>Sequencer</Link></li>
      </ul>
    </nav>   
     <div className="main">
