@@ -9,14 +9,14 @@ function Sequencer() {
 
     return (
         <div className="sequence">
-        <button type="checkbox"></button>
-        <button type="checkbox"></button>
-        <button type="checkbox"></button>
-        <button type="checkbox"></button>
-        <button type="checkbox"></button>
-        <button type="checkbox"></button>
-        <button type="checkbox"></button>
-        <button type="checkbox"></button>
+        <input type="checkbox"></input>
+        <input type="checkbox"></input>
+        <input type="checkbox"></input>
+        <input type="checkbox"></input>
+        <input type="checkbox"></input>
+        <input type="checkbox"></input>
+        <input type="checkbox"></input>
+        <input type="checkbox"></input>
        </div>
       );
     }
