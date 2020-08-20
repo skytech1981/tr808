@@ -49,63 +49,6 @@
 
 
 
-.boxes
-{
-
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-width: 80%;
-border: 2px solid black;
-border-radius: 8px;
-margin: 10px 10px;
-height: 40px;
-background-image: linear-gradient(grey,white,grey);
-}
-
-.Sboxes
-{
-
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-width: 80%;
-border: 2px solid black;
-border-radius: 8px;
-margin: 10px 10px;
-height: 40px;
-background-image: linear-gradient(grey,rgb(251, 179, 111),grey);
-}
-.Hboxes
-{
-
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-width: 80%;
-border: 2px solid black;
-border-radius: 8px;
-margin: 10px 10px;
-height: 40px;
-background-image: linear-gradient(grey,rgb(246, 109, 109),grey);
-}
-.Cboxes
-{
-
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-width: 80%;
-border: 2px solid black;
-border-radius: 8px;
-margin: 10px 10px;
-height: 40px;
-background-image: linear-gradient(grey,rgb(236, 232, 19),grey);
-}
 
 h2:hover
 {
@@ -114,9 +57,10 @@ box-shadow: 10px 20px 121px 13px rgba(0,0,0,0.75);
 border-radius: 20px;
 transition: 0.7s;
 background-color: rgb(23, 23, 48);
-font-family: cursive;
+font-family: arial;
 color: rgb(189, 216, 246);
 text-shadow: 1px 3px 5px rgb(131, 129, 129);
+border: 1px dashed white;
 
 }
 
@@ -216,13 +160,6 @@ justify-content: center;
   height: 90vh;
 }
 
-.beatboxpage
-{
-  background-image: linear-gradient(rgb(18, 6, 90),rgb(33, 12, 151)10%,rgb(136, 134, 146)50%,rgb(9, 3, 39));
- margin: 0;
-  height: 90vh;
-}
-
 
 p
 {
@@ -280,8 +217,9 @@ h2
 {
   
   color:rgba(207, 233, 124,0);
-  width: 60%;
-  max-width: 100%;
+  width: 50%;
+  max-width: 80%;
+  font-size: 2px;
   height: 60%;
   display: flex;
   align-items: center;
@@ -289,6 +227,7 @@ h2
   margin-top: 30px;
   margin-left: 25%;
   transition: 0.7s;
+  
 
 }
 

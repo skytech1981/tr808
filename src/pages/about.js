@@ -8,7 +8,7 @@ function About() {
   return (
     <div className="aboutpage">
     <p className="about-title"> The Fasinating Journey of BeatBox</p>
-    <h2 className="about-Desc">Beatboxing (also beat boxing or b-boxing) is a form of vocal percussion primarily involving the art of mimicking drum machines (typically a TR-808), using one's mouth, lips, tongue, and voice.[1] It may also involve vocal imitation of turntablism, and other musical instruments. Beatboxing today is connected with hip-hop culture, often referred to as "the fifth element" of hip-hop, although it is not limited to hip-hop music.[2][3] The term "beatboxing" is sometimes used to refer to vocal percussion in general.</h2>
+    <h2 className="about-Desc">The TR-808 Software Synthesizer is a detailed replica of the legendary TR-808—one of the most revered and sought-after electronic music instruments of all time. The plug-in version offers the sound and behavior of the original plus new features that virtually modify the hardware for more sound choices and faster, more fluid programming.</h2>
     </div>
   );
 }
