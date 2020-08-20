@@ -250,21 +250,22 @@ font-size: 45px;
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
-  background-image: linear-gradient(rgb(126, 117, 117)20%,rgb(212, 176, 176));
+  background-image: linear-gradient(rgb(255, 255, 255),rgb(48, 208, 236)20%,rgb(38, 174, 228),rgb(7, 1, 15));
   padding: 5px 0px;
   margin: 0;
   
 }
 
-nav ul li
+ li
 {
  
-margin-top: 10px;
+margin: 10px;
 font-family: Arial, Helvetica, sans-serif;
 font-size: 35px;
 text-shadow: 5px 5px 5px rgb(44, 38, 38);
 
 }
+
 
 
 .img

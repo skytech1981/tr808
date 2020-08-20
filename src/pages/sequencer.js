@@ -3,7 +3,7 @@ import Kick from '../drums/kickdrum.wav';
 import Snare from '../drums/snare.wav';
 import clap from '../drums/clap.wav';
 import chihat from '../drums/chihat.wav';
-import synth from '../drums/synth.wav';
+import drumfill from '../drums/synth.wav';
 import {Howl,Howler} from 'howler';
 import '../pages/sequencer.css';
 
@@ -13,7 +13,7 @@ const audioClips = [
                       {sound:Snare,label:"",id:2},
                       {sound:chihat,label:"",id:3},
                       {sound:clap,label:"",id:4},
-                      {sound:synth,label:"",id:5},
+                      {sound:drumfill,label:"",id:5},
                       
                    ]
 
