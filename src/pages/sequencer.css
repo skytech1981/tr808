@@ -1,19 +1,47 @@
-.button
-{
- display: flex;
- 
- width: 10%;
- margin: auto;
- height: 5vh;
- justify-content: center;
- border-radius: 20px;
 
-}
 .contain
 {
   
     
-    width: 100%;
-    margin-top: 50px;
+    width: 64px;
+    margin-top: 10px;
     height:5px;
+}
+
+.frame
+{
+    display: flex;
+ 
+    border-radius: 20px;
+
+    width: 11.4vw;
+    height: 50.6vh;
+   
+}
+.window
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 100vw;
+    height: 90vh;
+}
+
+.tr808
+{
+    display: flex;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color:navy;
+    width: 50vw;
+    height: 50vh;
+    box-shadow: 50px 50px 240px 123px rgba(0,0,0,0.75);
+}
+
+.keypad
+{
+    height: 100px;
+position: absolute;;
+
 }

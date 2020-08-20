@@ -153,15 +153,20 @@ border-radius: 5px;
 
 button
 {
-  width: 40px;
+  position: relative;
+  left: -1068px;
+bottom: -530px;
+  width: 20px;
   height: 20px;
   margin: 0px 3px;
-font-size: 30px;
+font-size: 20px;
 padding: 10px;
 border-radius: 4px;
 cursor: pointer;
 outline: none;
-
+border-radius: 50%;
+height: 5px;
+background-image: radial-gradient(rgb(212, 208, 208),black);
 
 }
 
@@ -193,11 +198,6 @@ flex-wrap: wrap;
 }
 
 
-button
-{
-
-background-image: radial-gradient(rgb(212, 208, 208),black);
-}
 
 
 button:active
@@ -225,7 +225,14 @@ justify-content: center;
 {
   background-image: linear-gradient(rgb(18, 6, 90),rgb(33, 12, 151)10%,rgb(136, 134, 146)50%,rgb(9, 3, 39));
  margin: 0;
-  height: 940px;
+  height: 90vh;
+}
+
+.beatboxpage
+{
+  background-image: linear-gradient(rgb(18, 6, 90),rgb(33, 12, 151)10%,rgb(136, 134, 146)50%,rgb(9, 3, 39));
+ margin: 0;
+  height: 90vh;
 }
 
 
@@ -253,9 +260,11 @@ font-size: 45px;
  
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   list-style: none;
-background-image: linear-gradient(grey,rgb(255, 255, 255));
-padding: 5px;
+  background-image: linear-gradient(rgb(126, 117, 117)20%,rgb(212, 176, 176));
+  padding: 5px 0px;
+  margin: 0;
   
 }
 
@@ -266,11 +275,14 @@ margin-top: 10px;
 font-family: Arial, Helvetica, sans-serif;
 font-size: 35px;
 text-shadow: 5px 5px 5px rgb(44, 38, 38);
+
 }
+
+
 .img
 {
   width: 100%;
-  height: 80%;
+  height: 80vh;
   display: flex;
   justify-content: center;
 }

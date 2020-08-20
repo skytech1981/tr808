@@ -9,12 +9,13 @@ import '../pages/sequencer.css';
 
 
 const audioClips = [
-  {sound:Kick,label:"Kick"},
-  {sound:chihat,label:"Hihat"},
-  {sound:Snare,label:"Snare"},
-  {sound:clap,label:"Clap"},
- {sound:synth,label:"DrumFill"}
-]
+                      {sound:Kick,label:"",id:1},
+                      {sound:Snare,label:"",id:2},
+                      {sound:chihat,label:"",id:3},
+                      {sound:clap,label:"",id:4},
+                      {sound:synth,label:"",id:5},
+                      
+                   ]
 
 class Sequencer extends Component {
 soundPlay= (src) => {
@@ -28,26 +29,33 @@ sound.play();
   rendButtonAndSound = () => {
         return audioClips.map((soundObj, index) => {
           return (
+            
             <div className="contain">
-            <button className="button" style={{color:"white"}} key={index} onClick={() => this.soundPlay(soundObj.sound)}>
-             {soundObj.label }
-          </button>
+                <button
+                    className="" 
+                    style={{color:"white"}} 
+                    key={index} 
+                    onClick={() => this.soundPlay(soundObj.sound)}>{soundObj.label} 
+                    <img className="keypad" src={ require('../pages/keypad1.png') } />
+               </button>
+               
           </div>
          )
       })
   }
 
 render(){
-Howler.volume(1.0)
- 
-  return <div>
-{this.rendButtonAndSound()}
-
-
-  </div>;
-
-  }
-}
+    Howler.volume(1.0)
+            return <div className="window">
+            <img className="tr808" src={ require('../pages/tr-808.jpg') } />
+              <div className="frame">
+                        {this.rendButtonAndSound()}
+                   </div>
+                   </div>
+                   
+                   ;
+        }
+ }
 
 export default Sequencer; 
 

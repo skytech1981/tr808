@@ -80,7 +80,7 @@ function box16()
 
 
   return (
-    <div className="App">
+    <div className="beatboxpage">
       <header className="App-header"><p className="beatboxTitle">Modern BeatBox</p>
         <div className="bord"></div>
         <div className="boxes">
