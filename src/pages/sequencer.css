@@ -40,11 +40,17 @@
 
 .keypad
 {
-    position: relative;
-    top: -5px;
-    height: 80px;
+    position: absolute;
+    top: -0.9px;
+    margin-left: 2px;
+    height: 74px;
  
 }
+.keypad:active
+{
+        height: 73px;
+ }
+
 
 .synth
 {
