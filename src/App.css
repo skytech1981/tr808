@@ -293,6 +293,7 @@ h2
   
   height: 90vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgb(23, 23, 48);
@@ -301,7 +302,9 @@ h2
 input[type=checkbox] {
   margin:20px;
   transform: scale(2.8);
+  
 }
+
 
 .home-title
 {
@@ -323,4 +326,18 @@ letter-spacing: 2px;
   width: 80%;
   margin: auto;
   font-size: 35px;
+}
+
+.kick
+{
+padding:0px 200px;
+ background: rgb(9, 176, 241);
+ border-radius: 10px;
+}
+.snare
+{
+  padding:0px 200px;
+  margin-top: 10px;
+ background: rgb(101, 98, 151);
+ border-radius: 10px;
 }

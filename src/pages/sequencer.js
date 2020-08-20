@@ -47,9 +47,56 @@ function Sequencer() {
         <input type="checkbox"></input>
         <input type="checkbox"></input>
         </div>
+        <div className="snare">
+        <input type="checkbox"></input>
+        <input type="checkbox"></input>
+        <input type="checkbox"></input>
+        <input type="checkbox"></input>
+        <input type="checkbox"></input>
+        <input type="checkbox"></input>
+        <input type="checkbox"></input>
+        <input type="checkbox"></input>
+        </div>
+        
        </div>
+       
       );
       
     }
     
     export default Sequencer;
+
+
+// function Demo() {
+//   const [isChecked, setIsChecked] = React.useState(
+//     false
+//   );
+
+//   const [playActive] = useSound(
+//     '../drums/kickdrum.wav',
+//     { volume: 0.25 }
+//   );
+//   const [playOn] = useSound(
+//     '../drums/kickdrum.wav',
+//     { volume: 0.25 }
+//   );
+//   const [playOff] = useSound(
+//     '../drums/snare.wav',
+//     { volume: 0.25 }
+//   );
+
+//   return (
+//     <Checkbox
+//       name="demo-checkbox"
+//       checked={isChecked}
+//       size={24}
+//       label="I agree to self-isolate"
+//       onChange={() => setIsChecked(!isChecked)}
+//       onMouseDown={playActive}
+//       onMouseUp={() => {
+//         isChecked ? playOff() : playOn();
+//       }}
+//     />
+//   );
+// }
+// export default Demo;
