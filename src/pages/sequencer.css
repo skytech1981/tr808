@@ -2,9 +2,11 @@
 .contain
 {
   
+    position: relative;
+    top: 457px;
+    left: 375px;
+    width: 100vh;
     
-    width: 64px;
-    margin-top: 10px;
     height:5px;
 }
 
@@ -30,18 +32,24 @@
 
 .tr808
 {
-    display: flex;
-    border: 2px solid black;
-    border-radius: 20px;
-    background-color:navy;
-    width: 50vw;
-    height: 50vh;
-    box-shadow: 50px 50px 240px 123px rgba(0,0,0,0.75);
+    margin-left: 180px;
+     border-radius: 10px;
+     height: 60vh;
+     box-shadow: 50px 50px 240px 123px rgba(0,0,0,0.75);
 }
 
 .keypad
 {
-    height: 100px;
-position: absolute;;
+    position: relative;
+    top: -5px;
+    height: 80px;
+ 
+}
 
+.synth
+{
+    display: flex;
+    justify-content: center;
+    bottom: 60px;
+    
 }

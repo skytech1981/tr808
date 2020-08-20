@@ -32,7 +32,7 @@ sound.play();
             
             <div className="contain">
                 <button
-                    className="" 
+                    className="synth" 
                     style={{color:"white"}} 
                     key={index} 
                     onClick={() => this.soundPlay(soundObj.sound)}>{soundObj.label} 
