@@ -196,13 +196,13 @@ flex-wrap: wrap;
 button
 {
 
-background-image: radial-gradient(rgb(56, 53, 53),black);
+background-image: radial-gradient(rgb(212, 208, 208),black);
 }
 
 
 button:active
 {
-  background-image: radial-gradient(rgb(137, 231, 15)50%,black);
+  background-image: radial-gradient(rgb(231, 217, 15)50%,black);
 }
 
 .main
