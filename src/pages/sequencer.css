@@ -48,7 +48,7 @@
 }
 .keypad:active
 {
-     height: 73px;
+     height: 75px;
  }
 
 
@@ -78,14 +78,76 @@
  
 }
 
+.keypad2:active
+{
+     height: 60px;
+ }
+
 
  .contain2
 {
   
     position: relative;
     top: 457px;
-    left: 377px;
+    left: 378px;
     width: 100vh;
     min-width: 4.5vh;
      height:5px;
 }
+
+.synth2
+{
+    display: flex;
+    justify-content: center;
+    bottom: 60px;
+    
+    
+}
+
+.keypad2
+{
+    position: absolute;
+    width: 38px;
+    top:8px;
+    height: 58px;
+ 
+}
+
+.keypad2:active
+{
+     height: 60px;
+ }
+
+ .contain3
+{
+  
+    position: relative;
+    top: 457px;
+    left: 380px;
+    width: 100vh;
+    min-width: 4.5vh;
+     height:5px;
+}
+
+.synth3
+{
+    display: flex;
+    justify-content: center;
+    bottom: 60px;
+    
+    
+}
+
+.keypad3
+{
+    position: absolute;
+    width: 55px;
+    top: -0.5px;
+    height: 78px;
+}
+
+.keypad3:active
+{
+     height: 80px;
+ }
+

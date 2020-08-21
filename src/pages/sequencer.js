@@ -20,6 +20,12 @@ const audioClips2 =  [
                       {sound:chihat,label:"",id:3},
                       {sound:clap,label:"",id:4},
                      ]
+const audioClips3 =  [
+                      {sound:Kick,label:"",id:1},
+                      {sound:Snare,label:"",id:2},
+                      {sound:chihat,label:"",id:3},
+                      {sound:clap,label:"",id:4},
+                     ]
 
 
 class Sequencer extends Component {
@@ -67,6 +73,23 @@ sound.play();
   })
 }
 
+rendButtonAndSound3 = () => {
+  return audioClips.map((soundObj, index) => {
+    return (
+      
+      <div className="contain3">
+          <button
+              className="synth" 
+              style={{color:"white"}} 
+              key={index} 
+              onClick={() => this.soundPlay(soundObj.sound)}>{soundObj.label} 
+              <img className="keypad3" src={ require('../pages/keypad4.png') } />
+         </button>
+         
+    </div>
+   )
+})
+}
 
 render(){
     Howler.volume(1.0)
@@ -75,6 +98,7 @@ render(){
               <div className="frame">
                         {this.rendButtonAndSound()}
                         {this.rendButtonAndSound2()}
+                        {this.rendButtonAndSound3()}
                    </div>
                    </div>
                    
