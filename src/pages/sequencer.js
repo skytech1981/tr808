@@ -8,14 +8,19 @@ import {Howl,Howler} from 'howler';
 import '../pages/sequencer.css';
 
 
-const audioClips = [
+const audioClips =  [
                       {sound:Kick,label:"",id:1},
                       {sound:Snare,label:"",id:2},
                       {sound:chihat,label:"",id:3},
                       {sound:clap,label:"",id:4},
-                      {sound:drumfill,label:"",id:5},
-                      
-                   ]
+                     ]
+const audioClips2 =  [
+                      {sound:Kick,label:"",id:1},
+                      {sound:Snare,label:"",id:2},
+                      {sound:chihat,label:"",id:3},
+                      {sound:clap,label:"",id:4},
+                     ]
+
 
 class Sequencer extends Component {
 soundPlay= (src) => {
@@ -44,12 +49,32 @@ sound.play();
       })
   }
 
+  rendButtonAndSound2 = () => {
+    return audioClips.map((soundObj, index) => {
+      return (
+        
+        <div className="contain2">
+            <button
+                className="synth" 
+                style={{color:"white"}} 
+                key={index} 
+                onClick={() => this.soundPlay(soundObj.sound)}>{soundObj.label} 
+                <img className="keypad2" src={ require('../pages/keypad3.png') } />
+           </button>
+           
+      </div>
+     )
+  })
+}
+
+
 render(){
     Howler.volume(1.0)
             return <div className="window">
             <img className="tr808" src={ require('../pages/tr-808.jpg') } />
               <div className="frame">
                         {this.rendButtonAndSound()}
+                        {this.rendButtonAndSound2()}
                    </div>
                    </div>
                    

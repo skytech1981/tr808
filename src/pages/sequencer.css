@@ -4,10 +4,10 @@
   
     position: relative;
     top: 457px;
-    left: 375px;
+    left: 378px;
     width: 100vh;
-    
-    height:5px;
+    min-width: 4.5vh;
+     height:5px;
 }
 
 .frame
@@ -16,7 +16,7 @@
  
     border-radius: 20px;
 
-    width: 11.4vw;
+    width: 9.05vw;
     height: 50.6vh;
    
 }
@@ -41,21 +41,51 @@
 .keypad
 {
     position: absolute;
-    top: -0.9px;
-    margin-left: 2px;
-    height: 74px;
+    width: 56px;
+    top: -0.6px;
+    height: 73px;
  
 }
 .keypad:active
 {
-        height: 73px;
+     height: 73px;
  }
 
 
-.synth
+.synth 
 {
     display: flex;
     justify-content: center;
     bottom: 60px;
     
+    
+}
+.synth2
+{
+    display: flex;
+    justify-content: center;
+    bottom: 60px;
+    
+    
+}
+
+.keypad2
+{
+    position: absolute;
+    width: 38px;
+    top:8px;
+    height: 58px;
+ 
+}
+
+
+ .contain2
+{
+  
+    position: relative;
+    top: 457px;
+    left: 377px;
+    width: 100vh;
+    min-width: 4.5vh;
+     height:5px;
 }
