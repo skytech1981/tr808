@@ -15,16 +15,16 @@ const audioClips =  [
                       {sound:clap,label:"",id:4},
                      ]
 const audioClips2 =  [
-                      {sound:Kick,label:"",id:1},
-                      {sound:Snare,label:"",id:2},
-                      {sound:chihat,label:"",id:3},
-                      {sound:clap,label:"",id:4},
+                      {sound:drumfill,label:"",id:5},
+                      {sound:Snare,label:"",id:6},
+                      {sound:chihat,label:"",id:7},
+                      {sound:clap,label:"",id:8},
                      ]
 const audioClips3 =  [
-                      {sound:Kick,label:"",id:1},
-                      {sound:Snare,label:"",id:2},
-                      {sound:chihat,label:"",id:3},
-                      {sound:clap,label:"",id:4},
+                      {sound:Kick,label:"",id:9},
+                      {sound:Snare,label:"",id:10},
+                      {sound:chihat,label:"",id:11},
+                      {sound:clap,label:"",id:12},
                      ]
 
 
@@ -56,7 +56,7 @@ sound.play();
   }
 
   rendButtonAndSound2 = () => {
-    return audioClips.map((soundObj, index) => {
+    return audioClips2.map((soundObj, index) => {
       return (
         
         <div className="contain2">
@@ -74,7 +74,7 @@ sound.play();
 }
 
 rendButtonAndSound3 = () => {
-  return audioClips.map((soundObj, index) => {
+  return audioClips3.map((soundObj, index) => {
     return (
       
       <div className="contain3">
