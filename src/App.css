@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "myFirstFont";
+  src:url("./pages/font1.ttf");
+
+}
 .App {
   display: flex;
   align-items: center;
@@ -62,7 +67,7 @@ background-color: rgb(23, 23, 48);
 font-family: arial;
 color: rgb(0, 0, 0);
 text-shadow: 1px 3px 5px rgb(131, 129, 129);
-border: 1px dashed white;
+border: 1px solid white;
 opacity: 0.9;
 }
 
@@ -175,7 +180,7 @@ font-size: 35px;
 }
 .menulist
 {
- 
+  
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -184,6 +189,7 @@ font-size: 35px;
   background-color: black;
   padding: 5px 0px;
   margin: 0;
+  max-height: 5vh;
   
 }
 
@@ -191,12 +197,39 @@ font-size: 35px;
 {
  
 margin: 10px;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 35px;
+font-family:"myFirstFont";
+font-size: 30px;
 text-shadow: 5px 5px 5px rgb(44, 38, 38);
-
+transition: 0.4s;
 }
 
+li:nth-child(1):hover
+{
+
+margin: 10px;
+font-family:"myFirstFont";
+font-size: 35px;
+text-shadow: 5px 5px 3px rgba(250, 248, 248, 0.267);
+transition: 0.4s;
+}
+li:nth-child(2):hover
+{
+  transition: 0.4s;
+margin: 10px;
+font-family:"myFirstFont";
+font-size: 35px;
+text-shadow: 5px 5px 5px rgb(44, 38, 38);
+text-shadow: 5px 5px 3px rgba(250, 248, 248, 0.267);
+}
+li:nth-child(3):hover
+{
+  transition: 0.4s;
+margin: 10px;
+font-family:"myFirstFont";
+font-size: 35px;
+text-shadow: 5px 5px 5px rgb(44, 38, 38);
+text-shadow: 5px 5px 3px rgba(250, 248, 248, 0.267);
+}
 
 
 .imghome
