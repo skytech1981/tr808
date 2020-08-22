@@ -52,16 +52,18 @@
 
 h2:hover
 {
-font-size: 37px;
-box-shadow: 10px 20px 121px 13px rgba(0,0,0,0.75);
+  background-image: linear-gradient(rgb(10, 21, 121,0.9),rgba(255, 255, 255, 0.9),rgb(6, 14, 93,0.9));
+font-size: 30px;
+opacity: 1;
+box-shadow: 10px 20px 151px 13px rgba(0,0,0,0.75);
 border-radius: 20px;
 transition: 0.7s;
 background-color: rgb(23, 23, 48);
 font-family: arial;
-color: rgb(189, 216, 246);
+color: rgb(0, 0, 0);
 text-shadow: 1px 3px 5px rgb(131, 129, 129);
 border: 1px dashed white;
-
+opacity: 0.9;
 }
 
 
@@ -158,7 +160,8 @@ justify-content: center;
   background-image: linear-gradient(rgb(18, 6, 90),rgb(33, 12, 151)10%,rgb(136, 134, 146)50%,rgb(9, 3, 39));
  margin: 0;
  width: 100vw;
-  height: 90vh;
+ height: 80vh;
+  
 }
 
 
@@ -208,8 +211,9 @@ text-shadow: 5px 5px 5px rgb(44, 38, 38);
 h2
 {
   
-  color:rgba(207, 233, 124,0);
+  background-image: linear-gradient(rgb(10, 21, 121,0),rgba(255, 255, 255, 0),rgb(6, 14, 93,0));
   width: 50%;
+  opacity: 0;
   max-width: 80%;
   font-size: 2px;
   height: 60%;
@@ -258,9 +262,10 @@ letter-spacing: 2px;
 
 .about-Desc
 {
-  
+  position: relative;
+  top: -90vh;
   width: 90%;
-  height: 60vh;
+  height: 65vh;
   margin: auto;
   font-size: 25px;
   
@@ -312,7 +317,7 @@ transition: 0.5s;
   height: 12vh;
   border-radius: 20px;
   border: 2px solid rgb(0, 0, 0);
-  transition: 0.8s;
+  transition: 0.3s;
 }
 
 .hjslogo
@@ -323,7 +328,7 @@ transition: 0.5s;
   left: 62vw;
   border-radius: 40px;
   border: 2px solid rgb(0, 0, 0);
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .rjslogo:hover
@@ -334,7 +339,7 @@ transition: 0.5s;
   border: 2px solid rgb(0, 0, 0);
   background-color: yellow;
   box-shadow: 5px 5px 13px -1px #000000;
-  transition: 0.8s;
+  transition: 0.3s;
 }
 
 
@@ -348,6 +353,12 @@ transition: 0.5s;
   border-radius: 10px;
  background-color: yellow;
  border: 2px solid rgb(241, 101, 8);
- transition: 0.8s;
+ transition: 0.3s;
  box-shadow: 5px 5px 13px -1px #000000;
+}
+
+.fdtr808
+{
+  width: 100vw;
+  height: 90vh;
 }
