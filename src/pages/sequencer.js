@@ -26,6 +26,13 @@ const audioClips3 =  [
                       {sound:chihat,label:"",id:11},
                       {sound:clap,label:"",id:12},
                      ]
+const audioClips4 =  [
+                      {sound:Kick,label:"",id:9},
+                      {sound:Snare,label:"",id:10},
+                      {sound:chihat,label:"",id:11},
+                      {sound:clap,label:"",id:12},
+                     ]
+
 
 
 class Sequencer extends Component {
@@ -91,6 +98,9 @@ rendButtonAndSound3 = () => {
 })
 }
 
+
+
+
 render(){
     Howler.volume(1.0)
             return <div className="window">
@@ -100,6 +110,7 @@ render(){
                         {this.rendButtonAndSound()}
                         {this.rendButtonAndSound2()}
                         {this.rendButtonAndSound3()}
+                        
                    </div>
                    </div>
                    

@@ -72,7 +72,7 @@ box-shadow: 10px 20px 151px 13px rgba(0,0,0,0.75);
 border-radius: 20px;
 transition: 0.7s;
 background-color: rgb(23, 23, 48);
-color: rgb(221, 176, 155);
+color: rgb(240, 236, 234);
 text-shadow: 1px 3px 5px rgb(0, 0, 0);
 border: 1px solid white;
 opacity: 0.9;
@@ -334,7 +334,7 @@ padding:0px 200px;
 
 .logo
 {
-  opacity: 0.12;
+  opacity: 0.22;
   position: relative;
   left: 85%;
   top:-85.5vh;
@@ -362,7 +362,7 @@ transition: 0.5s;
   top: -80px;
   left: 79vw;
   height: 12vh;
-  border-radius: 20px;
+  border-radius: 30px;
   border: 2px solid rgb(0, 0, 0);
   transition: 0.3s;
 }
@@ -373,7 +373,7 @@ transition: 0.5s;
   width: 180px;
   top: -80px;
   left: 62vw;
-  border-radius: 40px;
+  border-radius: 30px;
   border: 2px solid rgb(0, 0, 0);
   transition: 0.3s;
 }
@@ -382,9 +382,9 @@ transition: 0.5s;
 {
   width: 100px;
   height: 12vh;
-  border-radius: 20px;
-  border: 2px solid rgb(0, 0, 0);
-  background-color: yellow;
+  border-radius: 10px;
+  border: 3px solid rgb(0, 0, 0);
+ 
   box-shadow: 5px 5px 13px -1px #000000;
   transition: 0.3s;
 }
@@ -399,7 +399,7 @@ transition: 0.5s;
   left: 62vw;
   border-radius: 10px;
  background-color: yellow;
- border: 2px solid rgb(241, 101, 8);
+ border: 3px solid rgb(0, 0, 0);
  transition: 0.3s;
  box-shadow: 5px 5px 13px -1px #000000;
 }
