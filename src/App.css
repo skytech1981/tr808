@@ -200,7 +200,7 @@ text-shadow: 5px 5px 5px rgb(44, 38, 38);
 {
   margin-top: -16px;
   width: 100vw;
-  height: 80vh;
+  height: 72vh;
   display: flex;
   justify-content: center;
 }
@@ -282,23 +282,24 @@ padding:0px 200px;
 
 .logo
 {
-  opacity: 0.3;
+  opacity: 0.06;
   position: relative;
   left: 80%;
-  top:-93.5vh;
+  top:-85.5vh;
   width: 9vw;
   height: 4vh;
   
   border-radius: 10px;
   border: 3px solid rgb(0, 0, 0);
-  transition: 0.8;
+  transition: 0.8s;
 }
 
 .logo:hover
 {
   
-opacity: 0.8;
+opacity: 1;
 transition: 0.8; 
+transition: 0.5s;
 }
 
 
@@ -306,19 +307,47 @@ transition: 0.8;
 {
   position: relative;
   width: 100px;
-  top: -200px;
+  top: -80px;
   left: 79vw;
   height: 12vh;
-  border-radius: 40px;
+  border-radius: 20px;
   border: 2px solid rgb(0, 0, 0);
+  transition: 0.8s;
 }
+
 .hjslogo
 {
   position: relative;
   width: 180px;
-  top: -200px;
+  top: -80px;
   left: 62vw;
-  
+  border-radius: 40px;
+  border: 2px solid rgb(0, 0, 0);
+  transition: 0.5s;
+}
+
+.rjslogo:hover
+{
+  width: 100px;
+  height: 12vh;
   border-radius: 20px;
   border: 2px solid rgb(0, 0, 0);
+  background-color: yellow;
+  box-shadow: 5px 5px 13px -1px #000000;
+  transition: 0.8s;
+}
+
+
+.hjslogo:hover
+{
+
+  position: relative;
+  width: 180px;
+  top: -80px;
+  left: 62vw;
+  border-radius: 10px;
+ background-color: yellow;
+ border: 2px solid rgb(241, 101, 8);
+ transition: 0.8s;
+ box-shadow: 5px 5px 13px -1px #000000;
 }
