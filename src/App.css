@@ -304,15 +304,28 @@ color: rgb(195, 195, 195);
 font-weight: bold;
 letter-spacing: 5px;
 text-shadow: 5px 5px 5px rgb(53, 53, 53);
+transition: 0.4s;
+}
+
+.about-title:hover
+{
+  margin-top: 25px;
+  font-family:"myFirstFont2";
+  font-size: 38px;
+color: rgb(195, 195, 195);
+font-weight: bold;
+letter-spacing: 5px;
+text-shadow: 5px 5px 5px rgb(53, 53, 53);
+transition: 0.4s;
 }
 
 .about-Desc
 {
   
   position: relative;
-  top: -90vh;
+  top: -81vh;
   width: 90%;
-  height: 65vh;
+  height: 58vh;
   margin: auto;
   font-size: 25px;
   
