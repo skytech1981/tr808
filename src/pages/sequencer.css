@@ -4,7 +4,7 @@
   
     position: relative;
     top: 457px;
-    left: 378px;
+    left: 940px;
     width: 100vh;
     min-width: 4.5vh;
      height:5px;
@@ -32,7 +32,8 @@
 
 .tr808
 {
-    margin-left: 180px;
+    position: fixed;
+    
      border-radius: 10px;
      height: 60vh;
      box-shadow: 50px 50px 240px 123px rgba(0,0,0,0.75);
@@ -89,7 +90,7 @@
   
     position: relative;
     top: 457px;
-    left: 378px;
+    left: 1110px;
     width: 100vh;
     min-width: 4.5vh;
      height:5px;
@@ -123,7 +124,7 @@
   
     position: relative;
     top: 457px;
-    left: 380px;
+    left: 772px;
     width: 100vh;
     min-width: 4.5vh;
      height:5px;
@@ -151,3 +152,10 @@
      height: 80px;
  }
 
+.lether
+{
+    position: fixed;
+    top:57px;
+    width: 100vw;
+    height: 95vh;
+}

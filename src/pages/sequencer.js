@@ -94,6 +94,7 @@ rendButtonAndSound3 = () => {
 render(){
     Howler.volume(1.0)
             return <div className="window">
+               <img className="lether" src={ require('../pages/1234.jpg') }/>
             <img className="tr808" src={ require('../pages/tr-808.jpg') } />
               <div className="frame">
                         {this.rendButtonAndSound()}
