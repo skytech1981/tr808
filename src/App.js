@@ -15,9 +15,9 @@ function App() {
     <Router>
        <nav>
           <ul className="menulist">
-            <li className="li"><Link to="/home" style={{color:"black",paddingLeft: 13, textDecoration: 'none'}}>Home</Link></li>
-            <li className="li"><Link to="/about" style={{color:"black",paddingLeft: 13, textDecoration: 'none'}}>About</Link></li>
-            <li className="li"><Link to="/Sequencer" style={{color:"black",paddingLeft: 13, textDecoration: 'none'}}>Sequencer</Link></li>
+            <li className="li"><Link to="/home" style={{color:"white",paddingLeft: 13, textDecoration: 'none'}}>Home</Link></li>
+            <li className="li"><Link to="/about" style={{color:"white",paddingLeft: 13, textDecoration: 'none'}}>About</Link></li>
+            <li className="li"><Link to="/Sequencer" style={{color:"white",paddingLeft: 13, textDecoration: 'none'}}>Sequencer</Link></li>
          </ul>
       </nav>   
         <div className="main">
