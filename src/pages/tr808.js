@@ -205,7 +205,6 @@ rendButtonAndSound5 = () => {
 })
 }
 
-
  
 
 render(){
@@ -222,11 +221,14 @@ render(){
                         {this.rendButtonAndSound3()}
                         {this.rendButtonAndSound4()}
                         
+                        
                                 <select onChange={this.onChange}className="currentPreset" id="preset">
                                 <option value="clips">Soft Beats</option>
                                 <option value="clips2">Chill Vibes</option>
                                 <option value="clips3">Deep & Percsive</option>
                           </select>
+                          <h3 className="time">{new Date().toLocaleTimeString()}</h3>
+                          
                       </div>
                   </div>
             )
@@ -234,9 +236,35 @@ render(){
         }
  }
 
+ 
+ setInterval(Tr808,1000);
 export default Tr808; 
 
+function tick(){
+  const element = (
+  
+    <div>
  
+    </div>
+  
+  );
+  }
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
 

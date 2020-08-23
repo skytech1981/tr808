@@ -1,12 +1,9 @@
 import React , { useState } from 'react';
-import logo from './science-fiction.svg';
-import logo2 from './logo.svg';
 import './App.css';
 import Home from './pages/home';
 import About from './pages/about';
-import {Route, BrowserRouter as Router, Link} from "react-router-dom";
 import Tr808 from './pages/tr808';
-
+import {Route, BrowserRouter as Router, Link} from "react-router-dom";
 
 function App() {
 

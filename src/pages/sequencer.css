@@ -1,4 +1,6 @@
 
+
+
 .contain
 {
   
@@ -247,4 +249,30 @@ border-radius: 3px;
     border:2px solid rgb(238, 238, 238);
     font-weight: bolder;
 
+  }
+
+ 
+
+  .time
+  {
+      font-family:"myFirstFont";
+      color: rgb(255, 255, 255);
+      font-size: 13px;
+      position: fixed;
+      left: 90vw;
+      top:1vh;
+      opacity: 0.3;
+      transition: 0.3s;
+  }
+  .time:hover
+  {
+      letter-spacing: 2px;
+      font-family:"myFirstFont";
+      color: rgb(255, 255, 255);
+      font-size: 15px;
+      position: fixed;
+      left: 89.5vw;
+      top:0.5vh;
+      opacity: 0.7;
+      transition: 0.5s;
   }
