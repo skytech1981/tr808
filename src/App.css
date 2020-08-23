@@ -123,8 +123,8 @@ border-radius: 5px;
 button
 {
   position: relative;
-  left: -1068px;
- 
+  left: -1631px;
+ top: -63px;
   width: 0.02px;
   height: 0.02px;
   font-size: 5px;
@@ -148,6 +148,7 @@ button
 button:active
 {
   background-image: radial-gradient(rgb(231, 217, 15)50%,black);
+  
 }
 
 .main
@@ -297,7 +298,9 @@ text-shadow: 5px 5px 5px rgb(53, 53, 53);
 
 .about-title
 {
-  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
   font-family:"myFirstFont2";
   font-size: 35px;
 color: rgb(195, 195, 195);
@@ -421,7 +424,7 @@ transition: 0.5s;
 {
   position: relative;
   top: 22px;
-  width: 100vw;
+  width: 98vw;
   height: 81vh;
 }
 
