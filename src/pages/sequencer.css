@@ -145,7 +145,7 @@
 {
     position: absolute;
     left: 2px;
-    top:57px;
+    top:56px;
     width: 100vw;
     height: 96vh;
 }
@@ -227,6 +227,8 @@ top: 30.6vh;
 left: 27vw;
 background-color: rgb(144, 144, 144);
 color: rgb(61, 59, 59);
+outline-style: none;
+border-radius: 3px;
   }
 
  

@@ -22,7 +22,8 @@ import '../pages/sequencer.css';
 
 
 
-const audioClips =   [
+
+const audioClips =   [ 
                       {sound:Kick,label:"",id:1},
                       {sound:Snare,label:"",id:2},
                       {sound:chihat,label:"",id:3},
@@ -47,39 +48,44 @@ const audioClips4 =  [
                       {sound:shot,label:"",id:16},
                      ]
 const audioClips5 =  [
-                      {sound:Kick,label:"",id:13},
-                      {sound:Kick,label:"",id:14},
-                      {sound:Kick,label:"",id:15},
-                      {sound:Kick,label:"",id:16},
+                      {sound:Kick,label:"",id:17},
+                      {sound:Kick,label:"",id:18},
+                      {sound:Kick,label:"",id:19},
+                      {sound:Kick,label:"",id:20},
                      ]
 const audioClips6 =  [
-                      {sound:Kick,label:"",id:13},
-                      {sound:Kick,label:"",id:14},
-                      {sound:Kick,label:"",id:15},
-                      {sound:Kick,label:"",id:16},
+                      {sound:Kick,label:"",id:21},
+                      {sound:Kick,label:"",id:22},
+                      {sound:Kick,label:"",id:23},
+                      {sound:Kick,label:"",id:24},
                      ]
 const audioClips7 =  [
-                      {sound:Kick,label:"",id:13},
-                      {sound:Kick,label:"",id:14},
-                      {sound:Kick,label:"",id:15},
-                      {sound:Kick,label:"",id:16},
+                      {sound:Kick,label:"",id:25},
+                      {sound:Kick,label:"",id:26},
+                      {sound:Kick,label:"",id:27},
+                      {sound:Kick,label:"",id:28},
                      ]
 const audioClips8 =  [
-                      {sound:Kick,label:"",id:13},
-                      {sound:Kick,label:"",id:14},
-                      {sound:Kick,label:"",id:15},
-                      {sound:Kick,label:"",id:16},
+                      {sound:Kick,label:"",id:29},
+                      {sound:Kick,label:"",id:30},
+                      {sound:Kick,label:"",id:31},
+                      {sound:Kick,label:"",id:32},
                      ]
 
 
 
 class Tr808 extends Component {
+
+  
+
 soundPlay= (src) => {
 
 
+
   
-const clips = [{audioClips}] + [{audioClips2}] + [{audioClips3}] + [{audioClips4}]
-const clips2 = [{audioClips5}]
+const clips = [{audioClips}+{audioClips2}+{audioClips3}+{audioClips4}]
+const clips2 =[{audioClips5}+{audioClips6}+{audioClips7}+{audioClips8}]
+const clips3 = [{audioClips}+{audioClips6}+{audioClips7}+{audioClips4}]
 
 
 
@@ -89,6 +95,25 @@ const clips2 = [{audioClips5}]
   })
 sound.play();
 }
+
+// onChange = e =>  {
+
+//         this.setState({
+//             currentPreset:src.currentPreset ?
+//                        src.currentPreset + e.target.value
+//                         : 
+//                          e.target.value
+
+//         });
+
+// }
+
+
+
+
+
+
+
 
   rendButtonAndSound = () => {
         return audioClips.map((soundObj, index) => {
@@ -196,7 +221,8 @@ render(){
                         {this.rendButtonAndSound2()}
                         {this.rendButtonAndSound3()}
                         {this.rendButtonAndSound4()}
-                                <select className="currentPreset" id="preset">
+                        
+                                <select onChange={this.onChange}className="currentPreset" id="preset">
                                 <option value="clips">Soft Beats</option>
                                 <option value="clips2">Chill Vibes</option>
                                 <option value="clips3">Deep & Percsive</option>
