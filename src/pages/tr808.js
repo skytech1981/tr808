@@ -1,4 +1,4 @@
-import React ,{Component}from 'react';
+import React ,{Component ,useState,useEffect} from 'react';
 import Kick from '../drums/kickdrum.wav';
 import Snare from '../drums/snare.wav';
 import clap from '../drums/clap.wav';
@@ -19,28 +19,6 @@ import hatt from '../drums/hatt.wav';
 import {Howl,Howler} from 'howler';
 
 import '../pages/sequencer.css';
-
-
-// document.onkeydown = function(event){
-//   let keyPress = String.fromCharCode(event.keyCode)
-//   let keyCode = event.keyCode;
-//   document.getElementById('kp').innerHTML = keyPress;
-//   document.getElementById('kc').innerHTML = keyCode;
-// var status = document.getElementById('status');
-// status.innerHTML = "down event fire for : "+keyPress;
-// }
-
-// document.onkeyup = function(event){
-//   let keyPress = String.fromCharCode(event.keyCode)
-//   let keyCode = event.keyCode;
-//   document.getElementById('kp').innerHTML = keyPress;
-//   document.getElementById('kc').innerHTML = keyCode;
-// var status = document.getElementById('status');
-// status.innerHTML = "up event fire for : "+keyPress;
-// }
-
-
-
 
 
 
@@ -94,13 +72,17 @@ const audioClips8 =  [
                      ]
 
 
+
 class Tr808 extends Component {
 soundPlay= (src) => {
 
+
+  
 const clips = [{audioClips}] + [{audioClips2}] + [{audioClips3}] + [{audioClips4}]
-const clips2 = [{audioClips5}] + [{audioClips6}] + [{audioClips7}] + [{audioClips8}]
-  this.setState = clips2
-               
+const clips2 = [{audioClips5}]
+
+
+
 
   const sound= new Howl({
     src
@@ -180,9 +162,31 @@ rendButtonAndSound4 = () => {
 })
 }
 
+rendButtonAndSound5 = () => {
+  return audioClips5.map((soundObj, index) => {
+    return (
+      
+      <div className="contain4">
+          <button
+              className="synth" 
+              style={{color:"white"}} 
+              key={index} 
+              onClick={() => this.soundPlay(soundObj.sound)}>{soundObj.label} 
+              <img className="keypad4" src={ require('../pages/keypad5.png') } />
+         </button>
+         
+    </div>
+   )
+})
+}
+
+
+ 
+
 render(){
     Howler.volume(1.0)
             return( 
+              (
               <div className="window">
              <img className="lether" src={ require('../pages/1234.jpg') }/>
               <img className="tr808" src={ require('../pages/tr-808.jpg') } />
@@ -192,11 +196,14 @@ render(){
                         {this.rendButtonAndSound2()}
                         {this.rendButtonAndSound3()}
                         {this.rendButtonAndSound4()}
-                      
-                   </div>
-                   
-                   </div>
-                   
+                                <select className="currentPreset" id="preset">
+                                <option value="clips">Soft Beats</option>
+                                <option value="clips2">Chill Vibes</option>
+                                <option value="clips3">Deep Percs</option>
+                          </select>
+                      </div>
+                  </div>
+            )
             );
         }
  }
@@ -205,3 +212,23 @@ export default Tr808;
 
  
   
+
+
+// document.onkeydown = function(event){
+//   let keyPress = String.fromCharCode(event.keyCode)
+//   let keyCode = event.keyCode;
+//   document.getElementById('kp').innerHTML = keyPress;
+//   document.getElementById('kc').innerHTML = keyCode;
+// var status = document.getElementById('status');
+// status.innerHTML = "down event fire for : "+keyPress;
+// }
+
+// document.onkeyup = function(event){
+//   let keyPress = String.fromCharCode(event.keyCode)
+//   let keyCode = event.keyCode;
+//   document.getElementById('kp').innerHTML = keyPress;
+//   document.getElementById('kc').innerHTML = keyCode;
+// var status = document.getElementById('status');
+// status.innerHTML = "up event fire for : "+keyPress;
+// }
+

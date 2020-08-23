@@ -218,3 +218,31 @@ rotate: ;
       transform: rotate(360deg);;
     }
   }
+
+  .currentPreset
+  {
+position: absolute;
+width:137px;
+top: 30.6vh;
+left: 27vw;
+background-color: rgb(182, 182, 182);
+color: rgb(61, 59, 59);
+  }
+
+ 
+
+
+
+  .presetLabel
+  {
+     position: relative;
+     display: inline-block;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+     width:40vw;
+    left: -97vw;
+    height: 20px;
+    border:2px solid rgb(238, 238, 238);
+    font-weight: bolder;
+
+  }

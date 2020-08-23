@@ -390,8 +390,8 @@ transition: 0.5s;
   top: -80px;
   left: 62vw;
   border-radius: 30px;
-  border: 2px solid rgb(0, 0, 0);
-  transition: 0.3s;
+  
+  transition: 0.7s;
 }
 
 .rjslogo:hover
