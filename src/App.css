@@ -98,7 +98,7 @@ border-radius: 5px;
 .App-link {
   color: #06627c;
 }
-
+/* 
 @keyframes App-logo-spin {
   from {
     transform: skew(0deg, 0deg)rotate(0deg);;
@@ -116,7 +116,7 @@ border-radius: 5px;
   to {
     transform: skew(10deg, 10deg)rotate(360deg);;
   }
-}
+} */
 
 
 
@@ -172,7 +172,7 @@ justify-content: center;
 {
   background-image: linear-gradient(rgb(18, 6, 90),rgb(33, 12, 151)10%,rgb(136, 134, 146)50%,rgb(9, 3, 39));
  margin: 0;
- width: 100vw;
+ width: 99vw;
  height: 95vh;
   
 }
@@ -401,8 +401,9 @@ transition: 0.5s;
   border-radius: 10px;
   border: 3px solid rgb(0, 0, 0);
  
-  box-shadow: 5px 5px 13px -1px #000000;
+  box-shadow: 2px 2px 7px -1px #000000;
   transition: 0.3s;
+
 }
 
 
@@ -417,7 +418,8 @@ transition: 0.5s;
  background-color: yellow;
  border: 3px solid rgb(0, 0, 0);
  transition: 0.3s;
- box-shadow: 5px 5px 13px -1px #000000;
+ box-shadow: 2px 2px 7px -1px #000000;
+
 }
 
 .fdtr808
@@ -425,7 +427,7 @@ transition: 0.5s;
   position: relative;
   left: 15px;
   top: 22px;
-  width: 98vw;
+  width: 97vw;
   height: 81vh;
 }
 
@@ -435,4 +437,33 @@ span{
   top: 15px;
   font-size:12px;
   color:yellow;
+}
+
+.s
+{
+  position: absolute;
+  width: 37px;
+  top: 9.5vh;
+  left: 71.5vw;
+  transition: 0.8s;
+}
+
+.s:hover
+{
+  position: absolute;
+    top: 9.5vh;
+  left: 71.5vw;
+  animation: App-logo-spin infinite 1s linear;
+  transition: 0.8s;
+}
+
+.test
+{
+  position: absolute;
+  top: 80vh;
+  left: 50vw;
+  font-size:40px;
+  color:black;
+  
+  
 }

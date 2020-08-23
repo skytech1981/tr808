@@ -25,7 +25,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
     width: 55vw;
     height: 90vh;
 }
@@ -144,10 +143,10 @@
 
 .lether
 {
-    position: fixed;
-    left: 10px;
+    position: absolute;
+    left: 2px;
     top:57px;
-    width: 100%;
+    width: 100vw;
     height: 96vh;
 }
 
@@ -183,3 +182,39 @@
 {
      height: 80px;
  }
+
+ /* .knob-tr808
+ {
+
+position: absolute;
+left: 24.5vw;
+top: 46.7vh;
+width: 6vw;
+rotate: 10deg ;
+ } */
+
+ .knob
+ {
+
+position: absolute;
+left: 21.5vw;
+top: 23.7vh;
+width: 6vw;
+rotate: ;
+ }
+
+
+ @media (prefers-reduced-motion: no-preference) {
+    .s {
+      animation: App-logo-spin infinite 7s linear;
+    }
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);;
+    }
+    to {
+      transform: rotate(360deg);;
+    }
+  }

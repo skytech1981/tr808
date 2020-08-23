@@ -21,6 +21,29 @@ import {Howl,Howler} from 'howler';
 import '../pages/sequencer.css';
 
 
+// document.onkeydown = function(event){
+//   let keyPress = String.fromCharCode(event.keyCode)
+//   let keyCode = event.keyCode;
+//   document.getElementById('kp').innerHTML = keyPress;
+//   document.getElementById('kc').innerHTML = keyCode;
+// var status = document.getElementById('status');
+// status.innerHTML = "down event fire for : "+keyPress;
+// }
+
+// document.onkeyup = function(event){
+//   let keyPress = String.fromCharCode(event.keyCode)
+//   let keyCode = event.keyCode;
+//   document.getElementById('kp').innerHTML = keyPress;
+//   document.getElementById('kc').innerHTML = keyCode;
+// var status = document.getElementById('status');
+// status.innerHTML = "up event fire for : "+keyPress;
+// }
+
+
+
+
+
+
 const audioClips =   [
                       {sound:Kick,label:"",id:1},
                       {sound:Snare,label:"",id:2},
@@ -45,11 +68,39 @@ const audioClips4 =  [
                       {sound:Perc,label:"",id:15},
                       {sound:shot,label:"",id:16},
                      ]
-
+const audioClips5 =  [
+                      {sound:Kick,label:"",id:13},
+                      {sound:Kick,label:"",id:14},
+                      {sound:Kick,label:"",id:15},
+                      {sound:Kick,label:"",id:16},
+                     ]
+const audioClips6 =  [
+                      {sound:Kick,label:"",id:13},
+                      {sound:Kick,label:"",id:14},
+                      {sound:Kick,label:"",id:15},
+                      {sound:Kick,label:"",id:16},
+                     ]
+const audioClips7 =  [
+                      {sound:Kick,label:"",id:13},
+                      {sound:Kick,label:"",id:14},
+                      {sound:Kick,label:"",id:15},
+                      {sound:Kick,label:"",id:16},
+                     ]
+const audioClips8 =  [
+                      {sound:Kick,label:"",id:13},
+                      {sound:Kick,label:"",id:14},
+                      {sound:Kick,label:"",id:15},
+                      {sound:Kick,label:"",id:16},
+                     ]
 
 
 class Tr808 extends Component {
 soundPlay= (src) => {
+
+const clips = [{audioClips}] + [{audioClips2}] + [{audioClips3}] + [{audioClips4}]
+const clips2 = [{audioClips5}] + [{audioClips6}] + [{audioClips7}] + [{audioClips8}]
+  this.setState = clips2
+               
 
   const sound= new Howl({
     src
@@ -121,7 +172,7 @@ rendButtonAndSound4 = () => {
               style={{color:"white"}} 
               key={index} 
               onClick={() => this.soundPlay(soundObj.sound)}>{soundObj.label} 
-              <img className="keypad4" src={ require('../pages/keypad4.png') } />
+              <img className="keypad4" src={ require('../pages/keypad5.png') } />
          </button>
          
     </div>
@@ -131,18 +182,22 @@ rendButtonAndSound4 = () => {
 
 render(){
     Howler.volume(1.0)
-            return <div className="window">
-               <img className="lether" src={ require('../pages/1234.jpg') }/>
-            <img className="tr808" src={ require('../pages/tr-808.jpg') } />
+            return( 
+              <div className="window">
+             <img className="lether" src={ require('../pages/1234.jpg') }/>
+              <img className="tr808" src={ require('../pages/tr-808.jpg') } />
               <div className="frame">
+
                         {this.rendButtonAndSound()}
                         {this.rendButtonAndSound2()}
                         {this.rendButtonAndSound3()}
                         {this.rendButtonAndSound4()}
-                   </div>
+                      
                    </div>
                    
-                   ;
+                   </div>
+                   
+            );
         }
  }
 
