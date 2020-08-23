@@ -199,7 +199,7 @@ render(){
                                 <select className="currentPreset" id="preset">
                                 <option value="clips">Soft Beats</option>
                                 <option value="clips2">Chill Vibes</option>
-                                <option value="clips3">Deep Percs</option>
+                                <option value="clips3">Deep & Percsive</option>
                           </select>
                       </div>
                   </div>
