@@ -98,6 +98,25 @@ rendButtonAndSound3 = () => {
 })
 }
 
+rendButtonAndSound4 = () => {
+  return audioClips3.map((soundObj, index) => {
+    return (
+      
+      <div className="contain4">
+          <button
+              className="synth" 
+              style={{color:"white"}} 
+              key={index} 
+              onClick={() => this.soundPlay(soundObj.sound)}>{soundObj.label} 
+              <img className="keypad4" src={ require('../pages/keypad4.png') } />
+         </button>
+         
+    </div>
+   )
+})
+}
+
+
 
 
 
@@ -110,7 +129,7 @@ render(){
                         {this.rendButtonAndSound()}
                         {this.rendButtonAndSound2()}
                         {this.rendButtonAndSound3()}
-                        
+                        {this.rendButtonAndSound4()}
                    </div>
                    </div>
                    

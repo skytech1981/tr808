@@ -150,3 +150,36 @@
     width: 100%;
     height: 96vh;
 }
+
+.contain4
+{
+  
+    position: relative;
+    top: 457px;
+    left: 947px;
+    width: 100vh;
+    min-width: 4.5vh;
+     height:5px;
+}
+
+.synth4
+{
+    display: flex;
+    justify-content: center;
+    bottom: 60px;
+    
+    
+}
+
+.keypad4
+{
+    position: absolute;
+    width: 55px;
+    top:3px;
+    height: 78px;
+}
+
+.keypad4:active
+{
+     height: 80px;
+ }
