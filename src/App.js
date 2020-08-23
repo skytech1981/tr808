@@ -5,7 +5,7 @@ import './App.css';
 import Home from './pages/home';
 import About from './pages/about';
 import {Route, BrowserRouter as Router, Link} from "react-router-dom";
-import Sequencer from './pages/sequencer';
+import Tr808 from './pages/tr808';
 
 
 function App() {
@@ -17,13 +17,13 @@ function App() {
           <ul className="menulist">
             <li className="li"><Link to="/home" style={{color:"white",paddingLeft: 13, textDecoration: 'none'}}>Home</Link></li>
             <li className="li"><Link to="/about" style={{color:"white",paddingLeft: 13, textDecoration: 'none'}}>About</Link></li>
-            <li className="li"><Link to="/Sequencer" style={{color:"white",paddingLeft: 13, textDecoration: 'none'}}>Sequencer</Link></li>
+            <li className="li"><Link to="/tr808" style={{color:"white",paddingLeft: 13, textDecoration: 'none'}}>Sequencer</Link></li>
          </ul>
       </nav>   
         <div className="main">
           <Route path="/home" exact component={Home}/>
           <Route path="/about" exact component={About}/>
-          <Route path="/sequencer" exact component={Sequencer}/>
+          <Route path="/tr808" exact component={Tr808}/>
         </div>
     </Router>
   );

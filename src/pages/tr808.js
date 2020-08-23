@@ -48,7 +48,7 @@ const audioClips4 =  [
 
 
 
-class Sequencer extends Component {
+class Tr808 extends Component {
 soundPlay= (src) => {
 
   const sound= new Howl({
@@ -129,10 +129,6 @@ rendButtonAndSound4 = () => {
 })
 }
 
-
-
-
-
 render(){
     Howler.volume(1.0)
             return <div className="window">
@@ -150,7 +146,7 @@ render(){
         }
  }
 
-export default Sequencer; 
+export default Tr808; 
 
  
   
