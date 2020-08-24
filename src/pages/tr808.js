@@ -1,4 +1,4 @@
-import React ,{Component ,useState,useEffect} from 'react';
+import React ,{Component} from 'react';
 import Kick from '../drums/kickdrum.wav';
 import Snare from '../drums/snare.wav';
 import clap from '../drums/clap.wav';
@@ -72,10 +72,21 @@ const audioClips8 =  [
                       {sound:Kick,label:"",id:32},
                      ]
 
-
+const obj = {
+clips:  [audioClips,audioClips2,audioClips3,audioClips4],
+clips2: [audioClips5,audioClips6,audioClips7,audioClips8],
+clips3: [audioClips,audioClips6,audioClips7,audioClips4]
+}
 
 class Tr808 extends Component {
+constructor(props){
+super(props);
 
+
+this.state={options:"clips"}
+
+
+}
   
 
 soundPlay= (src) => {
@@ -83,9 +94,10 @@ soundPlay= (src) => {
 
 
   
-const clips = [{audioClips}+{audioClips2}+{audioClips3}+{audioClips4}]
-const clips2 =[{audioClips5}+{audioClips6}+{audioClips7}+{audioClips8}]
-const clips3 = [{audioClips}+{audioClips6}+{audioClips7}+{audioClips4}]
+// const clips = [{audioClips},{audioClips2},{audioClips3},{audioClips4}]
+// const clips2 =[{audioClips5},{audioClips6},{audioClips7},{audioClips8}]
+// const clips3 = [{audioClips},{audioClips6},{audioClips7},{audioClips4}]
+
 
 
 
@@ -96,119 +108,135 @@ const clips3 = [{audioClips}+{audioClips6}+{audioClips7}+{audioClips4}]
 sound.play();
 }
 
-// onChange = e =>  {
+onChange = e =>  {
 
-//         this.setState({
-//             currentPreset:src.currentPreset ?
-//                        src.currentPreset + e.target.value
-//                         : 
-//                          e.target.value
+        this.setState({
+           options:e.target.value
 
-//         });
+        });
 
+}
+
+
+
+rendButtonAndSound = () => {
+  console.log(obj[this.state.options])
+  return obj[this.state.options].map((soundObj, index) => {
+    return (
+      
+      <div className="contain">
+          <button
+              className="synth" 
+              style={{color:"white"}} 
+              key={index} 
+              onClick={() => this.soundPlay(soundObj.sound)}>{soundObj.label} 
+              <img className="keypad" src={ require('../pages/keypad1.png') } />
+         </button>
+         
+    </div>
+   )
+})
+}
+
+
+
+
+
+//   rendButtonAndSound = () => {
+//         return ((soundObj, index) => {
+//           return (
+            
+//             <div className="contain">
+//                 <button
+//                     className="synth" 
+//                     style={{color:"white"}} 
+//                     key={index} 
+//                     onClick={() => this.soundPlay(soundObj.sound)}>{soundObj.label} 
+//                     <img className="keypad" src={ require('../pages/keypad1.png') } />
+//                </button>
+               
+//           </div>
+//          )
+//       })
+//   }
+
+//   rendButtonAndSound2 = () => {
+//     return audioClips2.map((soundObj, index) => {
+//       return (
+        
+//         <div className="contain2">
+//             <button
+//                 className="synth" 
+//                 style={{color:"white"}} 
+//                 key={index} 
+//                 onClick={() => this.soundPlay(soundObj.sound)}>{soundObj.label} 
+//                 <img className="keypad2" src={ require('../pages/keypad3.png') } />
+//            </button>
+           
+//       </div>
+//      )
+//   })
 // }
 
-
-
-
-
-
-
-
-  rendButtonAndSound = () => {
-        return audioClips.map((soundObj, index) => {
-          return (
-            
-            <div className="contain">
-                <button
-                    className="synth" 
-                    style={{color:"white"}} 
-                    key={index} 
-                    onClick={() => this.soundPlay(soundObj.sound)}>{soundObj.label} 
-                    <img className="keypad" src={ require('../pages/keypad1.png') } />
-               </button>
-               
-          </div>
-         )
-      })
-  }
-
-  rendButtonAndSound2 = () => {
-    return audioClips2.map((soundObj, index) => {
-      return (
-        
-        <div className="contain2">
-            <button
-                className="synth" 
-                style={{color:"white"}} 
-                key={index} 
-                onClick={() => this.soundPlay(soundObj.sound)}>{soundObj.label} 
-                <img className="keypad2" src={ require('../pages/keypad3.png') } />
-           </button>
-           
-      </div>
-     )
-  })
-}
-
-rendButtonAndSound3 = () => {
-  return audioClips3.map((soundObj, index) => {
-    return (
+// rendButtonAndSound3 = () => {
+//   return audioClips3.map((soundObj, index) => {
+//     return (
       
-      <div className="contain3">
-          <button
-              className="synth" 
-              style={{color:"white"}} 
-              key={index} 
-              onClick={() => this.soundPlay(soundObj.sound)}>{soundObj.label} 
-              <img className="keypad3" src={ require('../pages/keypad4.png') } />
-         </button>
+//       <div className="contain3">
+//           <button
+//               className="synth" 
+//               style={{color:"white"}} 
+//               key={index} 
+//               onClick={() => this.soundPlay(soundObj.sound)}>{soundObj.label} 
+//               <img className="keypad3" src={ require('../pages/keypad4.png') } />
+//          </button>
          
-    </div>
-   )
-})
-}
+//     </div>
+//    )
+// })
+// }
 
-rendButtonAndSound4 = () => {
-  return audioClips4.map((soundObj, index) => {
-    return (
+// rendButtonAndSound4 = () => {
+//   return audioClips4.map((soundObj, index) => {
+//     return (
       
-      <div className="contain4">
-          <button
-              className="synth" 
-              style={{color:"white"}} 
-              key={index} 
-              onClick={() => this.soundPlay(soundObj.sound)}>{soundObj.label} 
-              <img className="keypad4" src={ require('../pages/keypad5.png') } />
-         </button>
+//       <div className="contain4">
+//           <button
+//               className="synth" 
+//               style={{color:"white"}} 
+//               key={index} 
+//               onClick={() => this.soundPlay(soundObj.sound)}>{soundObj.label} 
+//               <img className="keypad4" src={ require('../pages/keypad5.png') } />
+//          </button>
          
-    </div>
-   )
-})
-}
+//     </div>
+//    )
+// })
+// }
 
-rendButtonAndSound5 = () => {
-  return audioClips5.map((soundObj, index) => {
-    return (
+// rendButtonAndSound5 = () => {
+//   return audioClips5.map((soundObj, index) => {
+//     return (
       
-      <div className="contain4">
-          <button
-              className="synth" 
-              style={{color:"white"}} 
-              key={index} 
-              onClick={() => this.soundPlay(soundObj.sound)}>{soundObj.label} 
-              <img className="keypad4" src={ require('../pages/keypad5.png') } />
-         </button>
+//       <div className="contain4">
+//           <button
+//               className="synth" 
+//               style={{color:"white"}} 
+//               key={index} 
+//               onClick={() => this.soundPlay(soundObj.sound)}>{soundObj.label} 
+//               <img className="keypad4" src={ require('../pages/keypad5.png') } />
+//          </button>
          
-    </div>
-   )
-})
-}
+//     </div>
+//    )
+// })
+// }
 
  
 
 render(){
     Howler.volume(1.0)
+   
             return( 
               (
               <div className="window">
@@ -217,12 +245,12 @@ render(){
               <div className="frame">
 
                         {this.rendButtonAndSound()}
-                        {this.rendButtonAndSound2()}
+                        {/* {this.rendButtonAndSound2()}
                         {this.rendButtonAndSound3()}
-                        {this.rendButtonAndSound4()}
+                        {this.rendButtonAndSound4()} */}
                         
                         
-                                <select onChange={this.onChange}className="currentPreset" id="preset">
+                                <select defultValue={this.state.options} onChange={this.onChange}className="currentPreset" id="preset">
                                 <option value="clips">Soft Beats</option>
                                 <option value="clips2">Chill Vibes</option>
                                 <option value="clips3">Deep & Percsive</option>
@@ -237,7 +265,7 @@ render(){
  }
 
  
- setInterval(Tr808,1000);
+
 export default Tr808; 
 
 function tick(){
