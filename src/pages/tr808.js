@@ -32,7 +32,7 @@ const drumLoops =   [
 
 
 const audioClips =   [ 
-                      {sound:Kick,label:"",id:1,letter:'q'},
+                      {sound:Kick,label:"",id:1,letter:'1'},
                       {sound:Snare,label:"",id:2},
                       {sound:chihat,label:"",id:3},
                       {sound:clap,label:"",id:4}
@@ -215,14 +215,9 @@ return (
 })}
  
 
-
-
-
-
-
-
 render(){
     Howler.volume(1.0)
+
             return( 
               (
               <div className="window">
@@ -233,8 +228,9 @@ render(){
                         {this.rendButtonAndSound2()}
                         {this.rendButtonAndSound3()}
                         {this.rendButtonAndSound4()}
-                        
                         {this.keyPlay()}
+                      
+                        
                         
                                 <select onChange={this.onChange}className="currentPreset" id="preset">
                                 <option value="clips">Soft Beats</option>
@@ -254,15 +250,7 @@ render(){
  
 export default Tr808; 
 
-function tick(){
-  const element = (
-  
-    <div>
- 
-    </div>
-  
-  );
-  }
+
  
   
 
