@@ -2,10 +2,7 @@ import React , { useState } from 'react';
 import '../App.css';
 
 
-
 function Home() {
-
-
 
   return (
     <div className="homepage">
@@ -16,6 +13,7 @@ function Home() {
      <a href="https://reactjs.org"><img className="rjslogo" src={ require('../pages/rjslogo.png') }/></a>
      <a href="https://howlerjs.com"><img className="hjslogo" src={ require('../pages/howlerjs.png') }/></a>
     {/* <p className="test">hello tr808 page</p> */}
+    
     </div>
   );
 }

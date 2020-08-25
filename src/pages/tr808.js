@@ -1,4 +1,4 @@
-import React ,{Component ,useState,useEffect} from 'react';
+import React ,{Component } from 'react';
 import Kick from '../drums/kickdrum.wav';
 import Snare from '../drums/snare.wav';
 import clap from '../drums/clap.wav';
@@ -15,61 +15,69 @@ import tropicalclap from '../drums/tropicalclap.wav';
 import Perc from '../drums/Perc.wav';
 import shot from '../drums/shot.wav';
 import hatt from '../drums/hatt.wav';
+import a from '../drums/fx2.wav';
+import b from '../drums/fx2.wav';
+import c from '../drums/fx2.wav';
 
 import {Howl,Howler} from 'howler';
-
+import {Route, BrowserRouter as Router, Link} from "react-router-dom";
 import '../pages/sequencer.css';
 
 
 
+const drumLoops =   [ 
+                    {intro:a}
+                    ]
+
+
 
 const audioClips =   [ 
-                      {sound:Kick,label:"",id:1},
+                      {sound:Kick,label:"",id:1,letter:'q'},
                       {sound:Snare,label:"",id:2},
                       {sound:chihat,label:"",id:3},
-                      {sound:clap,label:"",id:4},
+                      {sound:clap,label:"",id:4}
                      ]
 const audioClips2 =  [
                       {sound:ride,label:"",id:5},
                       {sound:shake,label:"",id:6},
                       {sound:tom,label:"",id:7},
-                      {sound:cowba,label:"",id:8},
+                      {sound:cowba,label:"",id:8}
                      ]
 const audioClips3 =  [
                       {sound:clave,label:"",id:9},
                       {sound:congalo,label:"",id:10},
                       {sound:snaree,label:"",id:11},
-                      {sound:hatt,label:"",id:12},
+                      {sound:hatt,label:"",id:12}
                      ]
 const audioClips4 =  [
                       {sound:softhit,label:"",id:13},
                       {sound:tropicalclap,label:"",id:14},
                       {sound:Perc,label:"",id:15},
-                      {sound:shot,label:"",id:16},
+                      {sound:shot,label:"",id:16}
                      ]
 const audioClips5 =  [
                       {sound:Kick,label:"",id:17},
                       {sound:Kick,label:"",id:18},
                       {sound:Kick,label:"",id:19},
-                      {sound:Kick,label:"",id:20},
+                      {sound:Kick,label:"",id:20}
                      ]
 const audioClips6 =  [
                       {sound:Kick,label:"",id:21},
                       {sound:Kick,label:"",id:22},
                       {sound:Kick,label:"",id:23},
-                      {sound:Kick,label:"",id:24},
+                      {sound:Kick,label:"",id:24}
                      ]
 const audioClips7 =  [
                       {sound:Kick,label:"",id:25},
                       {sound:Kick,label:"",id:26},
                       {sound:Kick,label:"",id:27},
-                      {sound:Kick,label:"",id:28},
+                      {sound:Kick,label:"",id:28}
                      ]
 const audioClips8 =  [
                       {sound:Kick,label:"",id:29},
                       {sound:Kick,label:"",id:30},
                       {sound:Kick,label:"",id:31},
-                      {sound:Kick,label:"",id:32},
+                      {sound:Kick,label:"",id:32}
                      ]
 
 
@@ -83,39 +91,30 @@ soundPlay= (src) => {
 
 
   
-const clips = [{audioClips}+{audioClips2}+{audioClips3}+{audioClips4}]
-const clips2 =[{audioClips5}+{audioClips6}+{audioClips7}+{audioClips8}]
-const clips3 = [{audioClips}+{audioClips6}+{audioClips7}+{audioClips4}]
+const clips = [{audioClips},{audioClips2},{audioClips3},{audioClips4}]
+const clips2 =[{audioClips5},{audioClips6},{audioClips7},{audioClips8}]
+const clips3 = [{audioClips},{audioClips6},{audioClips7},{audioClips4}]
 
 
 
+const intro = new Howl({
+  src: ['drumloop.webm', 'intro.mp3'],
 
-  const sound= new Howl({
+     });
+intro.play();
+
+
+
+ const sound= new Howl({
     src
   })
-sound.play();
-}
-
-// onChange = e =>  {
-
-//         this.setState({
-//             currentPreset:src.currentPreset ?
-//                        src.currentPreset + e.target.value
-//                         : 
-//                          e.target.value
-
-//         });
-
-// }
-
-
-
-
-
+ sound.play();
+ }
 
 
 
   rendButtonAndSound = () => {
+    Howler.volume(1.0)
         return audioClips.map((soundObj, index) => {
           return (
             
@@ -188,7 +187,7 @@ rendButtonAndSound4 = () => {
 }
 
 rendButtonAndSound5 = () => {
-  return audioClips5.map((soundObj, index) => {
+  return drumLoops.map((soundObj, index) => {
     return (
       
       <div className="contain4">
@@ -196,7 +195,7 @@ rendButtonAndSound5 = () => {
               className="synth" 
               style={{color:"white"}} 
               key={index} 
-              onClick={() => this.soundPlay(soundObj.sound)}>{soundObj.label} 
+              onClick={() => this.soundPlay(soundObj.drumLoop)}>{soundObj.label} 
               <img className="keypad4" src={ require('../pages/keypad5.png') } />
          </button>
          
@@ -205,22 +204,37 @@ rendButtonAndSound5 = () => {
 })
 }
 
+keyPlay = () => {
+    return drumLoops.map((soundObj, index) => {
+return (
+<>
+<button className="keyPlay" onClick={this.soundPlay(soundObj.intro)}>click</button>
+</>
+)
+
+})}
  
+
+
+
+
+
+
 
 render(){
     Howler.volume(1.0)
             return( 
               (
               <div className="window">
-             <img className="lether" src={ require('../pages/1234.jpg') }/>
+              <img className="lether" src={ require('../pages/1234.jpg') }/>
               <img className="tr808" src={ require('../pages/tr-808.jpg') } />
               <div className="frame">
-
                         {this.rendButtonAndSound()}
                         {this.rendButtonAndSound2()}
                         {this.rendButtonAndSound3()}
                         {this.rendButtonAndSound4()}
                         
+                        {this.keyPlay()}
                         
                                 <select onChange={this.onChange}className="currentPreset" id="preset">
                                 <option value="clips">Soft Beats</option>
@@ -228,7 +242,7 @@ render(){
                                 <option value="clips3">Deep & Percsive</option>
                           </select>
                           <h3 className="time">{new Date().toLocaleTimeString()}</h3>
-                          
+                         
                       </div>
                   </div>
             )
@@ -237,7 +251,7 @@ render(){
  }
 
  
- setInterval(Tr808,1000);
+ 
 export default Tr808; 
 
 function tick(){

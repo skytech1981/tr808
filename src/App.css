@@ -467,3 +467,11 @@ span{
   
   
 }
+
+.keyplay
+{
+width: 40VW;
+  position: relative;
+  background: white;
+  border: 3px solid black;
+}
