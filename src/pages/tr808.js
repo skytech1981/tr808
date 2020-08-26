@@ -29,7 +29,7 @@ const drumLoops =   [
 
 
 
-const audioClips =   [ 
+const audioClips1 =   [ 
                       {sound:Kick,label:"",id:1},
                       {sound:Snare,label:"",id:2},
                       {sound:chihat,label:"",id:3},
@@ -54,16 +54,16 @@ const audioClips4 =  [
                       {sound:shot,label:"",id:16}
                      ]
 const audioClips5 =  [
-                      {sound:Kick,label:"",id:17},
-                      {sound:Kick,label:"",id:18},
-                      {sound:Kick,label:"",id:19},
-                      {sound:Kick,label:"",id:20}
+                      {sound:shot,label:"",id:17},
+                      {sound:shot,label:"",id:18},
+                      {sound:shot,label:"",id:19},
+                      {sound:shot,label:"",id:20}
                      ]
 const audioClips6 =  [
-                      {sound:Kick,label:"",id:21},
-                      {sound:Kick,label:"",id:22},
-                      {sound:Kick,label:"",id:23},
-                      {sound:Kick,label:"",id:24}
+                      {sound:congalo,label:"",id:21},
+                      {sound:congalo,label:"",id:22},
+                      {sound:congalo,label:"",id:23},
+                      {sound:congalo,label:"",id:24}
                      ]
 const audioClips7 =  [
                       {sound:Kick,label:"",id:25},
@@ -77,6 +77,33 @@ const audioClips8 =  [
                       {sound:Kick,label:"",id:31},
                       {sound:Kick,label:"",id:32}
                      ]
+const audioClips9 =  [
+                      {sound:Kick,label:"",id:29},
+                      {sound:Kick,label:"",id:30},
+                      {sound:Kick,label:"",id:31},
+                      {sound:Kick,label:"",id:32}
+                     ]
+const audioClips10 =  [
+                      {sound:Kick,label:"",id:29},
+                      {sound:Kick,label:"",id:30},
+                      {sound:Kick,label:"",id:31},
+                      {sound:Kick,label:"",id:32}
+                     ]
+const audioClips11 =  [
+                      {sound:Kick,label:"",id:29},
+                      {sound:Kick,label:"",id:30},
+                      {sound:Kick,label:"",id:31},
+                      {sound:Kick,label:"",id:32}
+                     ]
+const audioClips12 =  [
+                      {sound:Kick,label:"",id:29},
+                      {sound:Kick,label:"",id:30},
+                      {sound:Kick,label:"",id:31},
+                      {sound:Kick,label:"",id:32}
+                     ]
+
+
+
 
 
 
@@ -89,32 +116,42 @@ let time=new Date().toLocaleTimeString()
 this.state = {
 
            time:new Date().toLocaleTimeString(),
-           clips1:audioClips,
+           clips1:audioClips1,
            clips2:audioClips2,
            clips3:audioClips3,
            clips4:audioClips4
+
           }
 
 }
  
-componentDidMount() {
-  this.intervalID = setInterval(
-    () => this.setState({time:new Date().toLocaleTimeString()})
-  );
+onChange=(e)=> {
+ console.log(e.target.value )
+  this.setState({
+          clips1: e.target.value === 'clips1' ? audioClips1 : e.target.value === 'clips2' ? audioClips5 : audioClips9,
+          clips2: e.target.value === 'clips1' ? audioClips2: e.target.value === 'clips2' ? audioClips6 : audioClips10,
+          clips3: e.target.value === 'clips1' ? audioClips2: e.target.value === 'clips2' ? audioClips7 : audioClips11,
+          clips4: e.target.value === 'clips1' ? audioClips2: e.target.value === 'clips2' ? audioClips8 : audioClips12
+
+      });
+    
+   
 }
-componentWillUnmount() {
-  clearInterval(this.intervalID);
-}
+
+// componentDidMount() {
+//   this.intervalID = setInterval(
+// () => this.setState({time:new Date().toLocaleTimeString()})
+//   );
+// }
+// componentWillUnmount() {
+//   clearInterval(this.intervalID);
+// }
 
 
 soundPlay= (src) => {
 
 
  
-const clips = [{audioClips},{audioClips2},{audioClips3},{audioClips4}]
-const clips2 =[{audioClips5},{audioClips6},{audioClips7},{audioClips8}]
-const clips3 = [{audioClips},{audioClips6},{audioClips7},{audioClips4}]
-
 
 
 const intro = new Howl({
@@ -133,9 +170,15 @@ intro.play();
 
 
 
+
+
+
+
+
+
   rendButtonAndSound = () => {
     Howler.volume(1.0)
-        return audioClips.map((soundObj, index) => {
+        return this.state.clips1.map((soundObj, index) => {
           return (
             
             <div className="contain">
@@ -153,7 +196,7 @@ intro.play();
   }
 
   rendButtonAndSound2 = () => {
-    return audioClips2.map((soundObj, index) => {
+    return this.state.clips2.map((soundObj, index) => {
       return (
         
         <div className="contain2">
@@ -171,7 +214,7 @@ intro.play();
 }
 
 rendButtonAndSound3 = () => {
-  return audioClips3.map((soundObj, index) => {
+  return this.state.clips3.map((soundObj, index) => {
     return (
       
       <div className="contain3">
@@ -189,7 +232,7 @@ rendButtonAndSound3 = () => {
 }
 
 rendButtonAndSound4 = () => {
-  return audioClips4.map((soundObj, index) => {
+  return this.state.clips4.map((soundObj, index) => {
     return (
       
       <div className="contain4">
@@ -235,7 +278,19 @@ return (
 })}
  
 
+
+
+
+// handleChange = (e) => {
+//   console.log(e.target.value);
+//   return (e.target.value)
+// }
+
+
+
+
 render(){
+  console.log(this.state)
     Howler.volume(1.0)
 
             return( 
@@ -253,7 +308,7 @@ render(){
                         
                         
                                 <select onChange={this.onChange}className="currentPreset" id="preset">
-                                <option value="clips">Soft Beats</option>
+                                <option value="clips1">Soft Beats</option>
                                 <option value="clips2">Chill Vibes</option>
                                 <option value="clips3">Deep & Percsive</option>
                           </select>
