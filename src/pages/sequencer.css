@@ -1,43 +1,43 @@
 
-
-
-.contain
-{
-  
-    position: relative;
-    top: 457px;
-    left: 942px;
-    width: 100vh;
-    min-width: 4.5vh;
-     height:5px;
-}
-
-.frame
-{
-    display: flex;
- 
-    border-radius: 20px;
-
-    width: 9.05vw;
-    height: 50.6vh;
-   
-}
 .window
 {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 55vw;
-    height: 90vh;
+    height: 70vh;
+}
+
+
+.frame
+{
+    display: flex;
+ justify-content: flex-start;
+    border-radius: 20px;
+    margin-left:51vh;
+    width: 9.05vw;
+    height: 50.6vh;
+   
 }
 
 .tr808
 {
     position: relative;
-    margin-left: 50vw;
+    left: 40vw;
      border-radius: 10px;
      height: 60vh;
      box-shadow: 50px 50px 240px 123px rgba(0,0,0,0.75);
+}
+
+.contain
+{
+  
+    position: relative;
+    top: 457px;
+    left: 64.2vw;
+    width: 100vh;
+    min-width: 4.5vh;
+     height:5px;
 }
 
 .keypad
@@ -92,7 +92,7 @@
   
     position: relative;
     top: 457px;
-    left: 1114px;
+    left: 64.2vw;
     width: 100vh;
     min-width: 4.5vh;
      height:5px;
@@ -113,7 +113,7 @@
   
     position: relative;
     top: 457px;
-    left: 774px;
+    left: 64.3vw;
     width: 100vh;
     min-width: 4.5vh;
      height:5px;
@@ -148,8 +148,8 @@
     position: absolute;
     left: 2px;
     top:56px;
-    width: 100vw;
-    height: 96vh;
+    width: 99vw;
+    height: 95vh;
 }
 
 .contain4
@@ -157,7 +157,7 @@
   
     position: relative;
     top: 457px;
-    left: 947px;
+    left: 64.4vw;
     width: 100vh;
     min-width: 4.5vh;
      height:5px;
@@ -226,7 +226,7 @@ rotate: ;
 position: absolute;
 width:137px;
 top: 30.6vh;
-left: 27vw;
+left: 30vw;
 background-color: rgb(144, 144, 144);
 color: rgb(61, 59, 59);
 outline-style: none;
@@ -275,4 +275,12 @@ border-radius: 3px;
       top:0.2vh;
       opacity: 0.9;
       transition: 0.5s;
+  }
+
+  .contain,.contain2,.contain3,.contain4
+  {
+      
+right: 40vh;
+
+
   }

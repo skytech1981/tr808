@@ -16,8 +16,6 @@ import Perc from '../drums/Perc.wav';
 import shot from '../drums/shot.wav';
 import hatt from '../drums/hatt.wav';
 import a from '../drums/fx2.wav';
-import b from '../drums/fx2.wav';
-import c from '../drums/fx2.wav';
 
 import {Howl,Howler} from 'howler';
 import {Route, BrowserRouter as Router, Link} from "react-router-dom";
@@ -31,8 +29,8 @@ const drumLoops =   [
 
 
 
-const audioClips =   [ 
-                      {sound:Kick,label:"",id:1,letter:'1'},
+const audioClips1 =   [ 
+                      {sound:Kick,label:"",id:1},
                       {sound:Snare,label:"",id:2},
                       {sound:chihat,label:"",id:3},
                       {sound:clap,label:"",id:4}
@@ -56,45 +54,159 @@ const audioClips4 =  [
                       {sound:shot,label:"",id:16}
                      ]
 const audioClips5 =  [
-                      {sound:Kick,label:"",id:17},
-                      {sound:Kick,label:"",id:18},
-                      {sound:Kick,label:"",id:19},
-                      {sound:Kick,label:"",id:20}
+                      {sound:shot,label:"",id:17},
+                      {sound:shot,label:"",id:18},
+                      {sound:shot,label:"",id:19},
+                      {sound:shot,label:"",id:20}
                      ]
 const audioClips6 =  [
-                      {sound:Kick,label:"",id:21},
-                      {sound:Kick,label:"",id:22},
-                      {sound:Kick,label:"",id:23},
-                      {sound:Kick,label:"",id:24}
+                      {sound:shot,label:"",id:21},
+                      {sound:shot,label:"",id:22},
+                      {sound:shot,label:"",id:23},
+                      {sound:shot,label:"",id:24}
                      ]
 const audioClips7 =  [
-                      {sound:Kick,label:"",id:25},
-                      {sound:Kick,label:"",id:26},
-                      {sound:Kick,label:"",id:27},
-                      {sound:Kick,label:"",id:28}
+                      {sound:shot,label:"",id:25},
+                      {sound:shot,label:"",id:26},
+                      {sound:shot,label:"",id:27},
+                      {sound:shot,label:"",id:28}
                      ]
 const audioClips8 =  [
-                      {sound:Kick,label:"",id:29},
-                      {sound:Kick,label:"",id:30},
-                      {sound:Kick,label:"",id:31},
-                      {sound:Kick,label:"",id:32}
+                      {sound:shot,label:"",id:29},
+                      {sound:shot,label:"",id:30},
+                      {sound:shot,label:"",id:31},
+                      {sound:shot,label:"",id:32}
                      ]
+const audioClips9 =  [
+                      {sound:hatt,label:"",id:29},
+                      {sound:hatt,label:"",id:30},
+                      {sound:hatt,label:"",id:31},
+                      {sound:hatt,label:"",id:32}
+                     ]
+const audioClips10 =  [
+                      {sound:hatt,label:"",id:29},
+                      {sound:hatt,label:"",id:30},
+                      {sound:hatt,label:"",id:31},
+                      {sound:hatt,label:"",id:32}
+                     ]
+const audioClips11 =  [
+                      {sound:hatt,label:"",id:29},
+                      {sound:hatt,label:"",id:30},
+                      {sound:hatt,label:"",id:31},
+                      {sound:hatt,label:"",id:32}
+                     ]
+const audioClips12 =  [
+                      {sound:hatt,label:"",id:29},
+                      {sound:hatt,label:"",id:30},
+                      {sound:hatt,label:"",id:31},
+                      {sound:hatt,label:"",id:32}
+                     ]
+const audioClips13 =  [
+                      {sound:ride,label:"",id:29},
+                      {sound:ride,label:"",id:30},
+                      {sound:ride,label:"",id:31},
+                      {sound:ride,label:"",id:32}
+                     ]
+const audioClips14 =  [
+                      {sound:ride,label:"",id:29},
+                      {sound:ride,label:"",id:30},
+                      {sound:ride,label:"",id:31},
+                      {sound:ride,label:"",id:32}
+                     ]
+const audioClips15 =  [
+                      {sound:ride,label:"",id:29},
+                      {sound:ride,label:"",id:30},
+                      {sound:ride,label:"",id:31},
+                      {sound:ride,label:"",id:32}
+                     ]
+const audioClips16 =  [
+                      {sound:ride,label:"",id:29},
+                      {sound:ride,label:"",id:30},
+                      {sound:ride,label:"",id:31},
+                      {sound:ride,label:"",id:32}
+                     ]
+const audioClips17 =  [
+                      {sound:cowba,label:"",id:29},
+                      {sound:cowba,label:"",id:30},
+                      {sound:cowba,label:"",id:31},
+                      {sound:cowba,label:"",id:32}
+                     ]
+const audioClips18 =  [
+                      {sound:cowba,label:"",id:29},
+                      {sound:cowba,label:"",id:30},
+                      {sound:cowba,label:"",id:31},
+                      {sound:cowba,label:"",id:32}
+                     ]
+const audioClips19 =  [
+                      {sound:cowba,label:"",id:29},
+                      {sound:cowba,label:"",id:30},
+                      {sound:cowba,label:"",id:31},
+                      {sound:cowba,label:"",id:32}
+                     ]
+const audioClips20 =  [
+                      {sound:cowba,label:"",id:29},
+                      {sound:cowba,label:"",id:30},
+                      {sound:cowba,label:"",id:31},
+                      {sound:cowba,label:"",id:32}
+                     ]
+
+
 
 
 
 class Tr808 extends Component {
+constructor(props){
+super(props);
 
-  
+let time=new Date().toLocaleTimeString()
+
+this.state = {
+
+           time:new Date().toLocaleTimeString(),
+           clips1:audioClips1,
+           clips2:audioClips2,
+           clips3:audioClips3,
+           clips4:audioClips4,
+           clips1a:audioClips13,
+           clips2a:audioClips14,
+           clips3a:audioClips15,
+           clips4a:audioClips16
+
+
+
+
+
+          }
+
+}
+ 
+onChange=(e)=> {
+ console.log(e.target.value )
+  this.setState({
+          clips1: e.target.value === 'clips1' ? audioClips1: e.target.value === 'clips2' ? audioClips5 : audioClips9 || 'clips1a' ? audioClips13 :audioClips17,
+          clips2: e.target.value === 'clips1' ? audioClips2: e.target.value === 'clips2' ? audioClips6 : audioClips10 || 'clips2a' ? audioClips14 :audioClips18,
+          clips3: e.target.value === 'clips1' ? audioClips3: e.target.value === 'clips2' ? audioClips7 : audioClips11 || 'clips3a' ? audioClips15 : audioClips19,
+          clips4: e.target.value === 'clips1' ? audioClips4: e.target.value === 'clips2' ? audioClips8 : audioClips12 || 'clips4a' ? audioClips16 :audioClips20
+
+      });
+    
+   
+}
+
+componentDidMount() {
+  this.intervalID = setInterval(
+() => this.setState({time:new Date().toLocaleTimeString()})
+  );
+}
+componentWillUnmount() {
+  clearInterval(this.intervalID);
+}
+
 
 soundPlay= (src) => {
 
 
-
-  
-const clips = [{audioClips},{audioClips2},{audioClips3},{audioClips4}]
-const clips2 =[{audioClips5},{audioClips6},{audioClips7},{audioClips8}]
-const clips3 = [{audioClips},{audioClips6},{audioClips7},{audioClips4}]
-
+ 
 
 
 const intro = new Howl({
@@ -113,9 +225,15 @@ intro.play();
 
 
 
+
+
+
+
+
+
   rendButtonAndSound = () => {
     Howler.volume(1.0)
-        return audioClips.map((soundObj, index) => {
+        return this.state.clips1.map((soundObj, index) => {
           return (
             
             <div className="contain">
@@ -133,7 +251,7 @@ intro.play();
   }
 
   rendButtonAndSound2 = () => {
-    return audioClips2.map((soundObj, index) => {
+    return this.state.clips2.map((soundObj, index) => {
       return (
         
         <div className="contain2">
@@ -151,7 +269,7 @@ intro.play();
 }
 
 rendButtonAndSound3 = () => {
-  return audioClips3.map((soundObj, index) => {
+  return this.state.clips3.map((soundObj, index) => {
     return (
       
       <div className="contain3">
@@ -169,7 +287,7 @@ rendButtonAndSound3 = () => {
 }
 
 rendButtonAndSound4 = () => {
-  return audioClips4.map((soundObj, index) => {
+  return this.state.clips4.map((soundObj, index) => {
     return (
       
       <div className="contain4">
@@ -215,7 +333,19 @@ return (
 })}
  
 
+
+
+
+// handleChange = (e) => {
+//   console.log(e.target.value);
+//   return (e.target.value)
+// }
+
+
+
+
 render(){
+  console.log(this.state)
     Howler.volume(1.0)
 
             return( 
@@ -228,16 +358,18 @@ render(){
                         {this.rendButtonAndSound2()}
                         {this.rendButtonAndSound3()}
                         {this.rendButtonAndSound4()}
-                        {this.keyPlay()}
+                        {/* {this.keyPlay()} */}
                       
                         
                         
                                 <select onChange={this.onChange}className="currentPreset" id="preset">
-                                <option value="clips">Soft Beats</option>
+                                <option value="clips1">Soft Beats</option>
                                 <option value="clips2">Chill Vibes</option>
                                 <option value="clips3">Deep & Percsive</option>
+                                <option value="clips4">Hi-Tech Beats</option>
+                                <option value="clips5">LoFi</option>
                           </select>
-                          <h3 className="time">{new Date().toLocaleTimeString()}</h3>
+                          <h3 className="time">{this.state.time}</h3>
                          
                       </div>
                   </div>
@@ -269,22 +401,4 @@ export default Tr808;
 
   
 
-
-// document.onkeydown = function(event){
-//   let keyPress = String.fromCharCode(event.keyCode)
-//   let keyCode = event.keyCode;
-//   document.getElementById('kp').innerHTML = keyPress;
-//   document.getElementById('kc').innerHTML = keyCode;
-// var status = document.getElementById('status');
-// status.innerHTML = "down event fire for : "+keyPress;
-// }
-
-// document.onkeyup = function(event){
-//   let keyPress = String.fromCharCode(event.keyCode)
-//   let keyCode = event.keyCode;
-//   document.getElementById('kp').innerHTML = keyPress;
-//   document.getElementById('kc').innerHTML = keyCode;
-// var status = document.getElementById('status');
-// status.innerHTML = "up event fire for : "+keyPress;
-// }
 

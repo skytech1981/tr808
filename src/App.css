@@ -107,8 +107,6 @@ border-radius: 5px;
     transform: skew(360deg, 360deg)rotate(360deg);;
   }
 }
-
-
 @keyframes App-logo2-spin {
   from {
     transform: skew(0deg, 0deg)rotate(0deg);;
@@ -170,11 +168,13 @@ justify-content: center;
 
 .aboutpage
 {
+  position: relative;
+  top: -86px;
   background-image: linear-gradient(rgb(18, 6, 90),rgb(33, 12, 151)10%,rgb(136, 134, 146)50%,rgb(9, 3, 39));
  margin: 0;
- width: 99vw;
+ width: 100vw;
  height: 95vh;
-  
+ 
 }
 
 
@@ -242,7 +242,7 @@ text-shadow: 5px 5px 3px rgba(250, 248, 248, 0.267);
 
 .imghome
 {
-  margin-top: -16px;
+  margin-top: -2px;
   width: 100vw;
   height: 72vh;
   display: flex;
@@ -376,7 +376,7 @@ transition: 0.5s;
   position: relative;
   width: 100px;
   top: -80px;
-  left: 79vw;
+  left: 77vw;
   height: 12vh;
   border-radius: 30px;
   border: 2px solid rgb(0, 0, 0);
@@ -388,7 +388,7 @@ transition: 0.5s;
   position: relative;
   width: 180px;
   top: -80px;
-  left: 62vw;
+  left: 60vw;
   border-radius: 30px;
   
   transition: 0.7s;
@@ -413,7 +413,7 @@ transition: 0.5s;
   position: relative;
   width: 180px;
   top: -80px;
-  left: 62vw;
+  left: 60vw;
   border-radius: 10px;
  background-color: yellow;
  border: 3px solid rgb(0, 0, 0);

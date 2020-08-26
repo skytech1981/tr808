@@ -19,7 +19,7 @@ function App() {
          </ul>
       </nav>   
         <div className="main">
-          <Route path="/home" exact component={Home}/>
+          <Route path="/" component={Home}/>
           <Route path="/about" exact component={About}/>
           <Route path="/tr808" exact component={Tr808}/>
         </div>
