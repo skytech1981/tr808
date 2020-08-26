@@ -138,14 +138,14 @@ onChange=(e)=> {
    
 }
 
-// componentDidMount() {
-//   this.intervalID = setInterval(
-// () => this.setState({time:new Date().toLocaleTimeString()})
-//   );
-// }
-// componentWillUnmount() {
-//   clearInterval(this.intervalID);
-// }
+componentDidMount() {
+  this.intervalID = setInterval(
+() => this.setState({time:new Date().toLocaleTimeString()})
+  );
+}
+componentWillUnmount() {
+  clearInterval(this.intervalID);
+}
 
 
 soundPlay= (src) => {
