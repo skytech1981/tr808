@@ -5,8 +5,8 @@
 {
   
     position: relative;
-    top: 470px;
-    left: 918px;
+    top: 48.47vh;
+    left: 47.9vw;
     width: 100vh;
     min-width: 4.5vh;
      height:5px;
@@ -15,7 +15,7 @@
 .frame
 {
     display: flex;
- 
+   
     border-radius: 20px;
 
     width: 9.05vw;
@@ -91,8 +91,8 @@
 {
   
     position: relative;
-    top: 470px;
-    left: 1097px;
+    top: 48.47vh;
+    left: 57.1vw;
     width: 100vh;
     min-width: 4.5vh;
      height:5px;
@@ -112,8 +112,8 @@
 {
   
     position: relative;
-    top: 470px;
-    left: 746px;
+    top: 48.47vh;
+    left: 38.9vw;
     width: 100vh;
     min-width: 4.5vh;
      height:5px;
@@ -156,8 +156,8 @@
 {
   
     position: relative;
-    top: 470px;
-    left: 924px;
+    top: 48.47vh;
+    left: 48.1vw;
     width: 100vh;
     min-width: 4.5vh;
      height:5px;
@@ -239,12 +239,12 @@ border-radius: 3px;
 
   .presetLabel
   {
-     position: relative;
+     position: absolute;
      display: inline-block;
     font-size: 30px;
     color: rgb(255, 255, 255);
      width:40vw;
-    left: -97vw;
+    left: 17vw;
     height: 20px;
     border:2px solid rgb(238, 238, 238);
     font-weight: bolder;

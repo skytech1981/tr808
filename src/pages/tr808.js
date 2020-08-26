@@ -16,8 +16,6 @@ import Perc from '../drums/Perc.wav';
 import shot from '../drums/shot.wav';
 import hatt from '../drums/hatt.wav';
 import a from '../drums/fx2.wav';
-import b from '../drums/fx2.wav';
-import c from '../drums/fx2.wav';
 
 import {Howl,Howler} from 'howler';
 import {Route, BrowserRouter as Router, Link} from "react-router-dom";
@@ -32,7 +30,7 @@ const drumLoops =   [
 
 
 const audioClips =   [ 
-                      {sound:Kick,label:"",id:1,letter:'1'},
+                      {sound:Kick,label:"",id:1},
                       {sound:Snare,label:"",id:2},
                       {sound:chihat,label:"",id:3},
                       {sound:clap,label:"",id:4}
@@ -83,14 +81,36 @@ const audioClips8 =  [
 
 
 class Tr808 extends Component {
+constructor(props){
+super(props);
 
-  
+let time=new Date().toLocaleTimeString()
+
+this.state = {
+
+           time:new Date().toLocaleTimeString(),
+           clips1:audioClips,
+           clips2:audioClips2,
+           clips3:audioClips3,
+           clips4:audioClips4
+          }
+
+}
+ 
+componentDidMount() {
+  this.intervalID = setInterval(
+    () => this.setState({time:new Date().toLocaleTimeString()})
+  );
+}
+componentWillUnmount() {
+  clearInterval(this.intervalID);
+}
+
 
 soundPlay= (src) => {
 
 
-
-  
+ 
 const clips = [{audioClips},{audioClips2},{audioClips3},{audioClips4}]
 const clips2 =[{audioClips5},{audioClips6},{audioClips7},{audioClips8}]
 const clips3 = [{audioClips},{audioClips6},{audioClips7},{audioClips4}]
@@ -228,7 +248,7 @@ render(){
                         {this.rendButtonAndSound2()}
                         {this.rendButtonAndSound3()}
                         {this.rendButtonAndSound4()}
-                        {this.keyPlay()}
+                        {/* {this.keyPlay()} */}
                       
                         
                         
@@ -237,7 +257,7 @@ render(){
                                 <option value="clips2">Chill Vibes</option>
                                 <option value="clips3">Deep & Percsive</option>
                           </select>
-                          <h3 className="time">{new Date().toLocaleTimeString()}</h3>
+                          <h3 className="time">{this.state.time}</h3>
                          
                       </div>
                   </div>
