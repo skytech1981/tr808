@@ -389,6 +389,7 @@ render(){
 
             return( 
               (
+                <div className="container">
               <div className="window">
               <img className="lether" src={ require('../pages/1234.jpg') }/>
               <img className="tr808" src={ require('../pages/tr-808.jpg') } />
@@ -412,6 +413,7 @@ render(){
                           <h3 className="time">{this.state.time}</h3>
                          
                       </div>
+                    </div>
                   </div>
             )
             );

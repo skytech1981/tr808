@@ -8,10 +8,12 @@ function About() {
 
 
   return (
+    <div className="container">
     <div className="aboutpage">
      <img className="fdtr808" src={ require('../pages/tr-8082.jpg') }/>
-    <a href="https://en.wikipedia.org/wiki/Roland_TR-808" target="_blank" ><p className="about-title"> The Fasinating Journey of BeatBox</p></a>
+    <a href="https://en.wikipedia.org/wiki/Roland_TR-808" target="_blank" style={{textDecoration: 'none'}}><p className="about-title"> The Fasinating Journey of BeatBox</p></a>
     <h2 className="about-Desc">The TR-808 Software Synthesizer is a detailed replica of the legendary TR-808 . one of the most revered and sought-after electronic music instruments of all time. The plug-in version offers the sound and behavior of the original plus new features that virtually modify the hardware for more sound choices and faster, more fluid programming.</h2>
+     </div>
     </div>
   );
 }

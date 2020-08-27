@@ -4,7 +4,17 @@ body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    
 }
+
+.container {
+    
+    max-width: 100vw;
+    margin:  auto 0;
+    height: 70vh;
+    
+}
+
 
 .window
 {
@@ -12,7 +22,7 @@ body
     justify-content: center;
     align-items: center;
     width: 55vw;
-    height: 70vh;
+    height: 68vh;
 }
 
 
@@ -21,9 +31,9 @@ body
     display: flex;
  justify-content: flex-start;
     border-radius: 20px;
-    margin-left:46.9vh;
-    margin-top: 2.7vh;
-    width: 9.05vw;
+    margin-left:50.7vh;
+    margin-top: 0.3vh;
+    width: 9.5vw;
     height: 50.6vh;
    
 }
@@ -41,12 +51,48 @@ body
 {
   
     position: relative;
-    top: 457px;
+    top: 455.5px;
     left: 64.2vw;
     width: 100vh;
     min-width: 4.5vh;
      height:5px;
 }
+
+
+.contain2
+{
+  
+    position: relative;
+    top: 455.5px;
+    left: 64.2vw;
+    width: 100vh;
+    min-width: 4.5vh;
+     height:5px;
+}
+
+
+.contain3
+{
+  
+    position: relative;
+    top: 455.5px;
+    left: 64.3vw;
+    width: 100vh;
+    min-width: 4.5vh;
+     height:5px;
+}
+
+.contain4
+{
+  
+    position: relative;
+    top: 455.5px;
+    left: 64.4vw;
+    width: 100vh;
+    min-width: 4.5vh;
+     height:5px;
+}
+
 
 .keypad
 {
@@ -62,93 +108,57 @@ body
      height: 75px;
  }
 
+ .keypad2
+ {
+     position: absolute;
+     width: 40px;
+     top:12px;
+     height: 58px;
+  
+ }
+ 
+ .keypad2:active
+ {
+      height: 60px;
+  }
+
+  .keypad3
+  {
+      position: absolute;
+      width: 55px;
+      top:3px;
+      height: 78px;
+  }
+  
+  .keypad3:active
+  {
+       height: 80px;
+   }
+
+   .keypad4
+   {
+       position: absolute;
+       width: 55px;
+       top:3px;
+       height: 76px;
+   }
+   
+   .keypad4:active
+   {
+        height: 80px;
+    }
+ 
+
+
+
 
 .synth 
 {
     display: flex;
     justify-content: center;
-    bottom: 60px;
     
-    
+     
 }
-.synth2
-{
-    display: flex;
-    justify-content: center;
-    bottom: 60px;
-    
-    
-}
-
-.keypad2
-{
-    position: absolute;
-    width: 40px;
-    top:12px;
-    height: 58px;
- 
-}
-
-.keypad2:active
-{
-     height: 60px;
- }
-
-
- .contain2
-{
-  
-    position: relative;
-    top: 457px;
-    left: 64.2vw;
-    width: 100vh;
-    min-width: 4.5vh;
-     height:5px;
-}
-
-.synth2
-{
-    display: flex;
-    justify-content: center;
-    bottom: 60px;
-    
-    
-}
-
-
- .contain3
-{
-  
-    position: relative;
-    top: 457px;
-    left: 64.3vw;
-    width: 100vh;
-    min-width: 4.5vh;
-     height:5px;
-}
-
-.synth3
-{
-    display: flex;
-    justify-content: center;
-    bottom: 60px;
-    
-    
-}
-
-.keypad3
-{
-    position: absolute;
-    width: 55px;
-    top:3px;
-    height: 78px;
-}
-
-.keypad3:active
-{
-     height: 80px;
- }
-
 
 
 .lether
@@ -156,51 +166,9 @@ body
     position: absolute;
     left: 2px;
     top:56px;
-    width: 99vw;
-    height: 95vh;
+    width: 100vw;
+    height: 94vh;
 }
-
-.contain4
-{
-  
-    position: relative;
-    top: 457px;
-    left: 64.4vw;
-    width: 100vh;
-    min-width: 4.5vh;
-     height:5px;
-}
-
-.synth4
-{
-    display: flex;
-    justify-content: center;
-    bottom: 60px;
-    
-    
-}
-
-.keypad4
-{
-    position: absolute;
-    width: 55px;
-    top:3px;
-    height: 78px;
-}
-
-.keypad4:active
-{
-     height: 80px;
- }
-
- /* .knob-tr808
- {
-position: absolute;
-left: 24.5vw;
-top: 46.7vh;
-width: 6vw;
-rotate: 10deg ;
- } */
 
  .knob
  {
@@ -228,8 +196,10 @@ rotate: ;
     }
   }
 
-  .currentPreset
-  {
+
+
+.currentPreset
+{
 position: absolute;
 width:137px;
 top: 30.6vh;
@@ -238,14 +208,14 @@ background-color: rgb(144, 144, 144);
 color: rgb(61, 59, 59);
 outline-style: none;
 border-radius: 3px;
-  }
+}
 
  
 
 
 
-  .presetLabel
-  {
+.presetLabel
+ {
      position: relative;
      display: inline-block;
     font-size: 30px;
