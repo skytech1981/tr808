@@ -27,6 +27,12 @@
 
 
 
+nav
+{
+  width: 100%;
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -367,7 +373,7 @@ padding:0px 200px;
 {
   
 opacity: 1;
-transition: 0.8; 
+
 transition: 0.5s;
 }
 

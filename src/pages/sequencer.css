@@ -1,17 +1,23 @@
+
+
 body
 {
+    
     width: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    min-width:300px;
     
 }
 
 .container {
     
+position: relative;
     max-width: 100vw;
     margin:  auto 0;
-    height: 70vh;
+    height: 68vh;
+    
     
 }
 
@@ -22,7 +28,7 @@ body
     justify-content: center;
     align-items: center;
     width: 55vw;
-    height: 68vh;
+    height: 66vh;
 }
 
 
@@ -31,17 +37,18 @@ body
     display: flex;
  justify-content: flex-start;
     border-radius: 20px;
-    margin-left:50.7vh;
-    margin-top: 0.3vh;
+    margin-left:48.9vh;
+    margin-top: 3vh;
     width: 9.5vw;
     height: 50.6vh;
+    
    
 }
 
 .tr808
 {
     position: relative;
-    left: 40vw;
+    left: 41vw;
      border-radius: 10px;
      height: 60vh;
      box-shadow: 50px 50px 240px 123px rgba(0,0,0,0.75);
@@ -165,9 +172,9 @@ body
 {
     position: absolute;
     left: 2px;
-    top:56px;
+    top:-10vh;
     width: 100vw;
-    height: 94vh;
+    height: 94.2vh;
 }
 
  .knob
@@ -177,7 +184,7 @@ position: absolute;
 left: 21.5vw;
 top: 23.7vh;
 width: 6vw;
-rotate: ;
+
  }
 
 
@@ -202,16 +209,13 @@ rotate: ;
 {
 position: absolute;
 width:137px;
-top: 30.6vh;
-left: 30vw;
+top: 12.5vh;
+left: 30.3vw;
 background-color: rgb(144, 144, 144);
 color: rgb(61, 59, 59);
 outline-style: none;
 border-radius: 3px;
 }
-
- 
-
 
 
 .presetLabel
