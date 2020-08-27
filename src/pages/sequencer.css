@@ -1,3 +1,10 @@
+body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 
 .window
 {
@@ -14,7 +21,8 @@
     display: flex;
  justify-content: flex-start;
     border-radius: 20px;
-    margin-left:51vh;
+    margin-left:46.9vh;
+    margin-top: 2.7vh;
     width: 9.05vw;
     height: 50.6vh;
    

@@ -150,16 +150,16 @@ const audioClips20 =  [
                       {sound:cowba,label:"",id:32}
                      ]
 const audioClips21 =  [
-                      {sound:cowba,label:"",id:29},
-                      {sound:cowba,label:"",id:30},
-                      {sound:cowba,label:"",id:31},
-                      {sound:cowba,label:"",id:32}
+                      {sound:snaree,label:"",id:29},
+                      {sound:snaree,label:"",id:30},
+                      {sound:snaree,label:"",id:31},
+                      {sound:snaree,label:"",id:32}
                      ]
 const audioClips22 =  [
-                      {sound:cowba,label:"",id:29},
-                      {sound:cowba,label:"",id:30},
-                      {sound:cowba,label:"",id:31},
-                      {sound:cowba,label:"",id:32}
+                      {sound:snaree,label:"",id:29},
+                      {sound:snaree,label:"",id:30},
+                      {sound:snaree,label:"",id:31},
+                      {sound:snaree,label:"",id:32}
                      ]
 const audioClips23 =  [
                       {sound:cowba,label:"",id:29},
@@ -198,10 +198,7 @@ this.state = {
            clips2:audioClips2,
            clips3:audioClips3,
            clips4:audioClips4,
-           clips1a:audioClips1,
-           clips2a:audioClips2,
-           clips3a:audioClips3,
-           clips4a:audioClips4
+        
 
 
 
@@ -228,7 +225,7 @@ onChange=(e)=> {
    clips3:clips[e.target.value][2],
    clips4:clips[e.target.value][3],
    clips5:clips[e.target.value][4],
-
+   clips6:clips[e.target.value][5],
 
       });
     
@@ -408,8 +405,9 @@ render(){
                                 <option value="clips1">Soft Beats</option>
                                 <option value="clips2">Chill Vibes</option>
                                 <option value="clips3">Deep & Percsive</option>
-                                <option value="clips4">Hi-Tech Beats</option>
+                                <option value="clips4">HiTech Beats</option>
                                 <option value="clips5">LoFi</option>
+                                <option value="clips6">Oldies Filterd</option>
                           </select>
                           <h3 className="time">{this.state.time}</h3>
                          
