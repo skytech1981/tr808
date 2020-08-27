@@ -238,10 +238,10 @@ border-radius: 3px;
   {
       font-family:"myFirstFont";
       color: rgb(255, 255, 255);
-      font-size: 13px;
+      font-size: 16px;
       position: fixed;
       left: 90vw;
-      top:1vh;
+      top:0.5vh;
       opacity: 0.3;
       transition: 0.3s;
   }
@@ -249,10 +249,10 @@ border-radius: 3px;
   {
       letter-spacing: 2px;
       font-family:"myFirstFont";
-      color: rgb(255, 255, 255);
-      font-size: 17px;
+      color: rgb(240, 217, 16);
+      font-size: 18px;
       position: fixed;
-      left: 89vw;
+      left: 89.5vw;
       top:0.2vh;
       opacity: 0.9;
       transition: 0.5s;
