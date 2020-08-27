@@ -149,9 +149,40 @@ const audioClips20 =  [
                       {sound:cowba,label:"",id:31},
                       {sound:cowba,label:"",id:32}
                      ]
+const audioClips21 =  [
+                      {sound:cowba,label:"",id:29},
+                      {sound:cowba,label:"",id:30},
+                      {sound:cowba,label:"",id:31},
+                      {sound:cowba,label:"",id:32}
+                     ]
+const audioClips22 =  [
+                      {sound:cowba,label:"",id:29},
+                      {sound:cowba,label:"",id:30},
+                      {sound:cowba,label:"",id:31},
+                      {sound:cowba,label:"",id:32}
+                     ]
+const audioClips23 =  [
+                      {sound:cowba,label:"",id:29},
+                      {sound:cowba,label:"",id:30},
+                      {sound:cowba,label:"",id:31},
+                      {sound:cowba,label:"",id:32}
+                     ]
+const audioClips24 =  [
+                      {sound:cowba,label:"",id:29},
+                      {sound:cowba,label:"",id:30},
+                      {sound:cowba,label:"",id:31},
+                      {sound:cowba,label:"",id:32}
+                     ]
 
+const clips ={
+clips1:[audioClips1,audioClips2,audioClips3,audioClips4],
+clips2:[audioClips5,audioClips6,audioClips7,audioClips8],
+clips3:[audioClips9,audioClips10,audioClips11,audioClips12],
+clips4:[audioClips13,audioClips14,audioClips15,audioClips16],
+clips5:[audioClips17,audioClips18,audioClips19,audioClips20],
+clips6:[audioClips21,audioClips22,audioClips23,audioClips24]
 
-
+}
 
 
 class Tr808 extends Component {
@@ -167,10 +198,10 @@ this.state = {
            clips2:audioClips2,
            clips3:audioClips3,
            clips4:audioClips4,
-           clips1a:audioClips13,
-           clips2a:audioClips14,
-           clips3a:audioClips15,
-           clips4a:audioClips16
+           clips1a:audioClips1,
+           clips2a:audioClips2,
+           clips3a:audioClips3,
+           clips4a:audioClips4
 
 
 
@@ -183,10 +214,21 @@ this.state = {
 onChange=(e)=> {
  console.log(e.target.value )
   this.setState({
-          clips1: e.target.value === 'clips1' ? audioClips1: e.target.value === 'clips2' ? audioClips5 : audioClips9 || 'clips1a' ? audioClips13 :audioClips17,
-          clips2: e.target.value === 'clips1' ? audioClips2: e.target.value === 'clips2' ? audioClips6 : audioClips10 || 'clips2a' ? audioClips14 :audioClips18,
-          clips3: e.target.value === 'clips1' ? audioClips3: e.target.value === 'clips2' ? audioClips7 : audioClips11 || 'clips3a' ? audioClips15 : audioClips19,
-          clips4: e.target.value === 'clips1' ? audioClips4: e.target.value === 'clips2' ? audioClips8 : audioClips12 || 'clips4a' ? audioClips16 :audioClips20
+          // clips1:  e.target.value === 'clips1' ? audioClips1: e.target.value === 'clips2' ? audioClips5 : audioClips9 ,
+          // clips2:  e.target.value === 'clips1' ? audioClips2: e.target.value === 'clips2' ? audioClips6 : audioClips10,
+          // clips3:  e.target.value === 'clips1' ? audioClips3: e.target.value === 'clips2' ? audioClips7 : audioClips11,
+          // clips4:  e.target.value === 'clips1' ? audioClips4: e.target.value === 'clips2' ? audioClips8 : audioClips12 ,
+          // clips1: e.target.value === 'clips1' ? audioClips1: e.target.value === 'clips2' ? audioClips13 :audioClips17,
+          // clips2: e.target.value === 'clips1' ? audioClips2: e.target.value === 'clips2' ? audioClips14 :audioClips18,
+          // clips3: e.target.value === 'clips1' ? audioClips3: e.target.value === 'clips2' ? audioClips15 : audioClips19,
+          // clips4: e.target.value === 'clips1' ? audioClips4: e.target.value === 'clips2' ? audioClips16 :audioClips20,
+
+   clips1:clips[e.target.value][0],
+   clips2:clips[e.target.value][1],
+   clips3:clips[e.target.value][2],
+   clips4:clips[e.target.value][3],
+   clips5:clips[e.target.value][4],
+
 
       });
     
