@@ -249,9 +249,12 @@ text-shadow: 5px 5px 3px rgba(250, 248, 248, 0.267);
 
 .imghome
 {
+  
+  position: absolute;
+  top: 15vh;
   margin-top: -2px;
   width: 100vw;
-  height: 72vh;
+  height: 85vh;
   display: flex;
   justify-content: center;
 }
@@ -361,7 +364,7 @@ padding:0px 200px;
   opacity: 0.22;
   position: relative;
   left: 85%;
-  top:-86vh;
+  top:-100.5vh;
   width: 9vw;
   height: 4vh;
   
@@ -383,8 +386,8 @@ transition: 0.5s;
 {
   position: relative;
   width: 100px;
-  top: -80px;
-  left: 77vw;
+  top: -20vh;
+  left: 82vw;
   height: 12vh;
   border-radius: 30px;
   border: 2px solid rgb(0, 0, 0);
@@ -394,9 +397,9 @@ transition: 0.5s;
 .hjslogo
 {
   position: relative;
-  width: 180px;
-  top: -80px;
-  left: 60vw;
+  width: 160px;
+  top: -20.5vh;
+  left: 67vw;
   border-radius: 30px;
   
   transition: 0.7s;
@@ -419,9 +422,9 @@ transition: 0.5s;
 {
 
   position: relative;
-  width: 180px;
-  top: -80px;
-  left: 60vw;
+  width: 160px;
+ 
+  
   border-radius: 10px;
  background-color: yellow;
  border: 3px solid rgb(0, 0, 0);
@@ -484,11 +487,7 @@ width: 40VW;
   border: 3px solid black;
 }
 
-.part
-{
-  opacity: 0.9;
-  background-color: rgba(241, 6, 6, 0.144);
-}
+
 
 .currentVolume
 {
@@ -498,4 +497,13 @@ width: 30vw;
 height: 20px;
 margin-left: 0;
 
+}
+
+.parts
+{
+  position: relative;
+  top: -0.4vh;
+background-color: rgba(65, 5, 3, 0.623);
+width: 100vw;
+height: 86vh;
 }

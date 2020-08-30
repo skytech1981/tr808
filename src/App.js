@@ -4,7 +4,7 @@ import Home from './pages/home';
 import About from './pages/about';
 import Tr808 from './pages/tr808';
 import {Route, BrowserRouter as Router, Link} from "react-router-dom";
-import Particles from "react-particles-js";
+
 
 
 function App() {
@@ -25,11 +25,10 @@ function App() {
       </nav> 
      
           <div className="main">
-          {/* <Particles className="part" params={{polygon: {enable: true,type: 'inside', move: { radius: 10 }, url:'src\logo.svg' }}} > */}
           <Route path="/" component={Home}/>
           <Route path="/about" exact component={About}/>
           <Route path="/tr808" exact component={Tr808}/>
-          {/* </Particles> */}
+          
          </div>
   
     </Router>
