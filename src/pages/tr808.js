@@ -23,6 +23,7 @@ import '../pages/sequencer.css';
 
 
 
+
 const drumLoops =   [ 
                     {intro:a}
                     ]
@@ -175,14 +176,32 @@ const audioClips24 =  [
                      ]
 
 const clips ={
-clips1:[audioClips1,audioClips2,audioClips3,audioClips4],
-clips2:[audioClips5,audioClips6,audioClips7,audioClips8],
-clips3:[audioClips9,audioClips10,audioClips11,audioClips12],
-clips4:[audioClips13,audioClips14,audioClips15,audioClips16],
-clips5:[audioClips17,audioClips18,audioClips19,audioClips20],
-clips6:[audioClips21,audioClips22,audioClips23,audioClips24]
+pclips1:[audioClips1,audioClips2,audioClips3,audioClips4],
+pclips2:[audioClips5,audioClips6,audioClips7,audioClips8],
+pclips3:[audioClips9,audioClips10,audioClips11,audioClips12],
+pclips4:[audioClips13,audioClips14,audioClips15,audioClips16],
+pclips5:[audioClips17,audioClips18,audioClips19,audioClips20],
+pclips6:[audioClips21,audioClips22,audioClips23,audioClips24]
 
 }
+
+// const gvol ={
+// vol1: Howler.volume(0.1),
+// vol2: Howler.volume(0.2),
+// vol3: Howler.volume(0.3),
+// vol4: Howler.volume(0.4),
+// vol5: Howler.volume(0.5),
+// vol6: Howler.volume(0.6),
+// vol7: Howler.volume(0.7),
+// vol8: Howler.volume(0.8),
+// vol9: Howler.volume(0.9),
+// vol10:Howler.volume(1.0)
+
+// }
+
+
+
+
 
 
 class Tr808 extends Component {
@@ -198,16 +217,18 @@ this.state = {
            clips2:audioClips2,
            clips3:audioClips3,
            clips4:audioClips4,
-        
-
-
-
-
+         
 
           }
 
 }
  
+
+// updateVolume = function(value){
+//   Howler.volume(0.1);
+// }
+
+
 onChange=(e)=> {
  console.log(e.target.value )
   this.setState({
@@ -226,11 +247,34 @@ onChange=(e)=> {
    clips4:clips[e.target.value][3],
    clips5:clips[e.target.value][4],
    clips6:clips[e.target.value][5],
+   
 
+   
       });
     
    
 }
+
+// volOnChange=(e)=> {
+//   console.log(e.target.value )
+//    this.setState({
+       
+//     vol1: vol[e.target.value][0],
+//     vol2: vol[e.target.value][1],
+//     vol3: vol[e.target.value][2],
+//     vol4: vol[e.target.value][3],
+//     vol5: vol[e.target.value][4],
+//     vol6: vol[e.target.value][5],
+//     vol7: vol[e.target.value][6],
+//     vol8: vol[e.target.value][7],
+//     vol9: vol[e.target.value][8],
+//     vol10:vol[e.target.value][9]
+    
+//        });
+     
+    
+//  }
+ 
 
 componentDidMount() {
   this.intervalID = setInterval(
@@ -248,30 +292,25 @@ soundPlay= (src) => {
  
 
 
-const intro = new Howl({
-  src: ['drumloop.webm', 'intro.mp3'],
+// const intro = new Howl({
+//   src: ['drumloop.webm', 'intro.mp3'],
 
-     });
-intro.play();
+//      });
+// intro.play();
 
 
 
  const sound= new Howl({
-    src
+    src,
+    loop:false,
+    
   })
  sound.play();
  }
 
 
-
-
-
-
-
-
-
   rendButtonAndSound = () => {
-    Howler.volume(1.0)
+   
         return this.state.clips1.map((soundObj, index) => {
           return (
             
@@ -360,32 +399,26 @@ rendButtonAndSound5 = () => {
    )
 })
 }
+// this function will play a sound everytime when the page is renderd 
+// keyPlay = () => {
+//     return drumLoops.map((soundObj, index) => {
+// return (
+// <>
+// <button className="keyPlay" onClick={this.soundPlay(soundObj.intro)}>click</button>
+// </>
+// )
 
-keyPlay = () => {
-    return drumLoops.map((soundObj, index) => {
-return (
-<>
-<button className="keyPlay" onClick={this.soundPlay(soundObj.intro)}>click</button>
-</>
-)
-
-})}
+// })}
  
 
 
-
-
-// handleChange = (e) => {
-//   console.log(e.target.value);
-//   return (e.target.value)
-// }
 
 
 
 
 render(){
   console.log(this.state)
-    Howler.volume(1.0)
+    // Howler.volume(1.0)
 
             return( 
               (
@@ -403,15 +436,16 @@ render(){
                         
                         
                                 <select onChange={this.onChange}className="currentPreset" id="preset">
-                                <option value="clips1">Soft Beats</option>
-                                <option value="clips2">Chill Vibes</option>
-                                <option value="clips3">Deep & Percsive</option>
-                                <option value="clips4">HiTech Beats</option>
-                                <option value="clips5">LoFi</option>
-                                <option value="clips6">Oldies Filterd</option>
+                                <option value="pclips1">Soft Beats</option>
+                                <option value="pclips2">Chill Vibes</option>
+                                <option value="pclips3">Deep & Percsive</option>
+                                <option value="pclips4">HiTech Beats</option>
+                                <option value="pclips5">LoFi</option>
+                                <option value="pclips6">Oldies Filterd</option>
                           </select>
                           <h3 className="time">{this.state.time}</h3>
-                         
+                          {/* <input type="range"  min="0" max="9" onChange={this.volOnChange} className="currentVolume"   value={this.state.value} step="1"/>   */}
+                            {/* <button className="updateb" onClick={updateVolume()}>update volume</button>                     */}
                       </div>
                     </div>
                   </div>
