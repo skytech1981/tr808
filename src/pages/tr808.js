@@ -16,7 +16,6 @@ import Perc from '../drums/Perc.wav';
 import shot from '../drums/shot.wav';
 import hatt from '../drums/hatt.wav';
 import a from '../drums/fx2.wav';
-
 import {Howl,Howler} from 'howler';
 import {Route, BrowserRouter as Router, Link} from "react-router-dom";
 import '../pages/sequencer.css';
@@ -185,24 +184,6 @@ pclips6:[audioClips21,audioClips22,audioClips23,audioClips24]
 
 }
 
-// const gvol ={
-// vol1: Howler.volume(0.1),
-// vol2: Howler.volume(0.2),
-// vol3: Howler.volume(0.3),
-// vol4: Howler.volume(0.4),
-// vol5: Howler.volume(0.5),
-// vol6: Howler.volume(0.6),
-// vol7: Howler.volume(0.7),
-// vol8: Howler.volume(0.8),
-// vol9: Howler.volume(0.9),
-// vol10:Howler.volume(1.0)
-
-// }
-
-
-
-
-
 
 class Tr808 extends Component {
 constructor(props){
@@ -224,23 +205,12 @@ this.state = {
 }
  
 
-// updateVolume = function(value){
-//   Howler.volume(0.1);
-// }
 
 
 onChange=(e)=> {
  console.log(e.target.value )
   this.setState({
-          // clips1:  e.target.value === 'clips1' ? audioClips1: e.target.value === 'clips2' ? audioClips5 : audioClips9 ,
-          // clips2:  e.target.value === 'clips1' ? audioClips2: e.target.value === 'clips2' ? audioClips6 : audioClips10,
-          // clips3:  e.target.value === 'clips1' ? audioClips3: e.target.value === 'clips2' ? audioClips7 : audioClips11,
-          // clips4:  e.target.value === 'clips1' ? audioClips4: e.target.value === 'clips2' ? audioClips8 : audioClips12 ,
-          // clips1: e.target.value === 'clips1' ? audioClips1: e.target.value === 'clips2' ? audioClips13 :audioClips17,
-          // clips2: e.target.value === 'clips1' ? audioClips2: e.target.value === 'clips2' ? audioClips14 :audioClips18,
-          // clips3: e.target.value === 'clips1' ? audioClips3: e.target.value === 'clips2' ? audioClips15 : audioClips19,
-          // clips4: e.target.value === 'clips1' ? audioClips4: e.target.value === 'clips2' ? audioClips16 :audioClips20,
-
+       
    clips1:clips[e.target.value][0],
    clips2:clips[e.target.value][1],
    clips3:clips[e.target.value][2],
@@ -255,25 +225,7 @@ onChange=(e)=> {
    
 }
 
-// volOnChange=(e)=> {
-//   console.log(e.target.value )
-//    this.setState({
-       
-//     vol1: vol[e.target.value][0],
-//     vol2: vol[e.target.value][1],
-//     vol3: vol[e.target.value][2],
-//     vol4: vol[e.target.value][3],
-//     vol5: vol[e.target.value][4],
-//     vol6: vol[e.target.value][5],
-//     vol7: vol[e.target.value][6],
-//     vol8: vol[e.target.value][7],
-//     vol9: vol[e.target.value][8],
-//     vol10:vol[e.target.value][9]
-    
-//        });
-     
-    
-//  }
+
  
 
 componentDidMount() {
@@ -287,17 +239,6 @@ componentWillUnmount() {
 
 
 soundPlay= (src) => {
-
-
- 
-
-
-// const intro = new Howl({
-//   src: ['drumloop.webm', 'intro.mp3'],
-
-//      });
-// intro.play();
-
 
 
  const sound= new Howl({
@@ -399,22 +340,6 @@ rendButtonAndSound5 = () => {
    )
 })
 }
-// this function will play a sound everytime when the page is renderd 
-// keyPlay = () => {
-//     return drumLoops.map((soundObj, index) => {
-// return (
-// <>
-// <button className="keyPlay" onClick={this.soundPlay(soundObj.intro)}>click</button>
-// </>
-// )
-
-// })}
- 
-
-
-
-
-
 
 render(){
   console.log(this.state)

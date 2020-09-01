@@ -1,10 +1,55 @@
 import React , { useState } from 'react';
 import '../App.css';
+import a from '../drums/fx2.wav';
+import {Howl,Howler} from 'howler';
 import Particles from 'react-particles-js';
 
-function Home() {
 
 
+const drumLoops =   [ 
+  {intro:a}
+  ]
+
+
+
+
+class Home extends React.Component {
+constructor(props){
+  super(props);
+
+ 
+  this.soundPlay= (src) => {
+
+   
+    const intro = new Howl({
+  src: ['drumloop.webm', 'intro.mp3'],
+
+     });
+
+intro.play();
+  
+const sound= new Howl({
+  src,
+  loop:false,
+  volume:0.1
+  
+})
+sound.play();
+}
+     
+
+}
+keyPlay = () => {
+    return drumLoops.map((soundObj, index) => {
+return (
+<>
+<button className="keyPlay" onClick={this.soundPlay(soundObj.intro)}>click</button>
+</>
+)
+
+})}
+
+render(){
   return (
   <>
      <div className="homepage">
@@ -15,12 +60,13 @@ function Home() {
      <a href="https://www.roland.com/global/promos/roland_tr-808/" target="_blank"><img className="logo" src="https://www.kindpng.com/picc/m/781-7815787_thumb-image-roland-music-logo-png-transparent-png.png"/></a>
      <a href="https://reactjs.org"><img className="rjslogo" src={ require('../pages/rjslogo.png') }/></a>
      <a href="https://howlerjs.com"><img className="hjslogo" src={ require('../pages/howlerjs.png') }/></a>
+          {this.keyPlay()}
          </div>
       
     </>
 
    
   );
+ }
 }
-
 export default Home;
