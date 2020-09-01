@@ -471,8 +471,8 @@ width: 40VW;
 {
   color: red;
   background-color: grey;
-  position: relative;
-  left: -114.2vh;
+  position: absolute;
+  left: -42.4vh;
   top: 16vh;
 width: 100px;
 height: 1px;

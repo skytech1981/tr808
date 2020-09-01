@@ -35,10 +35,10 @@ position: relative;
 .frame
 {
     display: flex;
- justify-content: flex-start;
+    position: absolute;
     border-radius: 20px;
-    margin-left:49vh;
-    margin-top: 3.1vh;
+    left: 59.8vw;
+    top: 9.25vh;;
     width: 10vw;
     height: 50.6vh;
     
@@ -47,8 +47,8 @@ position: relative;
 
 .tr808
 {
-    position: relative;
-    left: 41vw;
+    position: absolute;
+    left: 25vw;
      border-radius: 10px;
      height: 60vh;
      box-shadow: 50px 50px 240px 123px rgba(0,0,0,0.75);
@@ -197,9 +197,10 @@ position: relative;
 .currentPreset
 {
 position: absolute;
-width:144px;
-top: 12.6vh;
-left: 29.9vw;
+width:7.5vw;
+height: 18px;
+top: 1.65vw;
+left: -30.6vw;
 background-color: rgb(144, 144, 144);
 color: rgb(61, 59, 59);
 outline-style: none;
@@ -214,7 +215,7 @@ border-radius: 3px;
      display: inline-block;
     font-size: 30px;
     color: rgb(255, 255, 255);
-     width:40vw;
+     width:42vw;
     left: -97vw;
     height: 20px;
     border:2px solid rgb(238, 238, 238);
@@ -262,21 +263,22 @@ right: 40vh;
   {
  width: 20px;
  position: absolute;
- left: 28.0vw;
- top: 29.6vh;
+ left: -32.4vw;
+ top: 20.6vh;
  width: 4.8vw;
  transform:rotate(10deg);
  transition: 1.2s;
   }
+
   .knob:active
   {
       opacity: 1;
  width: 20px;
  position: absolute;
- left: 28.0vw;
- top: 29.6vh;
+ left: -32.4vw;
+ top: 20.6vh;
  width: 4.8vw;
  transform:rotate(320deg);
- transition: 0.6s;
+ transition: 1.0s;
   }
 
