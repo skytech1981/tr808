@@ -187,6 +187,7 @@ pclips6:[audioClips21,audioClips22,audioClips23,audioClips24]
 
 
 const gvol = [0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0]
+// const rotation = [0,40,70,100,130,170,200,230,260,290,320]
 
 
 
@@ -204,10 +205,10 @@ this.state = {
            clips2:audioClips2,
            clips3:audioClips3,
            clips4:audioClips4,
-          currentVol:Howler.volume(0.5)
-
+           currentVol:Howler.volume(0.5),
+            // rotateVol: 0
           }
-
+          //  this.rotate = this.rotate.bind(this);
 }
  
 
@@ -248,7 +249,11 @@ volOnChange=(e)=> {
 
  }
  
+//  rotate=(e)=> {
+//   console.log(e.target.value );
+//   this.setState({rotateVol: rotation[e.target.value]});
 
+//  }
 componentDidMount() {
   this.intervalID = setInterval(
 () => this.setState({time:new Date().toLocaleTimeString()})
@@ -273,6 +278,11 @@ soundPlay= (src) => {
  }
 
 
+
+
+
+
+ 
   rendButtonAndSound = () => {
    
         return this.state.clips1.map((soundObj, index) => {
@@ -386,7 +396,7 @@ render(){
                         {this.rendButtonAndSound2()}
                         {this.rendButtonAndSound3()}
                         {this.rendButtonAndSound4()}
-                                             
+                                        
                         
                         
                                 <select onChange={this.onChange}className="currentPreset" id="preset">
@@ -399,7 +409,8 @@ render(){
                           </select>
                           <h3 className="time">{this.state.time}</h3>
                           <input  type="range"  min="0" max="10" onChange={this.volOnChange} className="currentVolume"   value={this.state.value} step="1"/>  
-                          <img className="knob" src={ require('../pages/knob.png') }/>
+                         <img className="knob"  src={ require('../pages/knob.png') }/>
+
                       </div>
                     </div>
                   </div>
