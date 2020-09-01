@@ -16,6 +16,7 @@ import Perc from '../drums/Perc.wav';
 import shot from '../drums/shot.wav';
 import hatt from '../drums/hatt.wav';
 import a from '../drums/fx2.wav';
+
 import {Howl,Howler} from 'howler';
 import {Route, BrowserRouter as Router, Link} from "react-router-dom";
 import '../pages/sequencer.css';
@@ -185,6 +186,11 @@ pclips6:[audioClips21,audioClips22,audioClips23,audioClips24]
 }
 
 
+const gvol = [0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0]
+
+
+
+
 class Tr808 extends Component {
 constructor(props){
 super(props);
@@ -198,19 +204,30 @@ this.state = {
            clips2:audioClips2,
            clips3:audioClips3,
            clips4:audioClips4,
-         
+          currentVol:Howler.volume(0.5)
 
           }
 
 }
  
 
+// updateVolume = function(value){
+//   Howler.volume(0.1);
+// }
 
 
 onChange=(e)=> {
- console.log(e.target.value )
+ 
   this.setState({
-       
+          // clips1:  e.target.value === 'clips1' ? audioClips1: e.target.value === 'clips2' ? audioClips5 : audioClips9 ,
+          // clips2:  e.target.value === 'clips1' ? audioClips2: e.target.value === 'clips2' ? audioClips6 : audioClips10,
+          // clips3:  e.target.value === 'clips1' ? audioClips3: e.target.value === 'clips2' ? audioClips7 : audioClips11,
+          // clips4:  e.target.value === 'clips1' ? audioClips4: e.target.value === 'clips2' ? audioClips8 : audioClips12 ,
+          // clips1: e.target.value === 'clips1' ? audioClips1: e.target.value === 'clips2' ? audioClips13 :audioClips17,
+          // clips2: e.target.value === 'clips1' ? audioClips2: e.target.value === 'clips2' ? audioClips14 :audioClips18,
+          // clips3: e.target.value === 'clips1' ? audioClips3: e.target.value === 'clips2' ? audioClips15 : audioClips19,
+          // clips4: e.target.value === 'clips1' ? audioClips4: e.target.value === 'clips2' ? audioClips16 :audioClips20,
+
    clips1:clips[e.target.value][0],
    clips2:clips[e.target.value][1],
    clips3:clips[e.target.value][2],
@@ -225,7 +242,11 @@ onChange=(e)=> {
    
 }
 
+volOnChange=(e)=> {
+  console.log(e.target.value );
+  this.setState({currentVol: gvol[e.target.value]});
 
+ }
  
 
 componentDidMount() {
@@ -240,6 +261,8 @@ componentWillUnmount() {
 
 soundPlay= (src) => {
 
+
+ 
 
  const sound= new Howl({
     src,
@@ -341,9 +364,16 @@ rendButtonAndSound5 = () => {
 })
 }
 
+ 
+
+
+
+
+
+
 render(){
-  console.log(this.state)
-    // Howler.volume(1.0)
+
+    Howler.volume(this.state.currentVol)
 
             return( 
               (
@@ -356,8 +386,7 @@ render(){
                         {this.rendButtonAndSound2()}
                         {this.rendButtonAndSound3()}
                         {this.rendButtonAndSound4()}
-                        {/* {this.keyPlay()} */}
-                      
+                                             
                         
                         
                                 <select onChange={this.onChange}className="currentPreset" id="preset">
@@ -369,8 +398,8 @@ render(){
                                 <option value="pclips6">Oldies Filterd</option>
                           </select>
                           <h3 className="time">{this.state.time}</h3>
-                          {/* <input type="range"  min="0" max="9" onChange={this.volOnChange} className="currentVolume"   value={this.state.value} step="1"/>   */}
-                            {/* <button className="updateb" onClick={updateVolume()}>update volume</button>                     */}
+                          <input  type="range"  min="0" max="10" onChange={this.volOnChange} className="currentVolume"   value={this.state.value} step="1"/>  
+                          <img className="knob" src={ require('../pages/knob.png') }/>
                       </div>
                     </div>
                   </div>
@@ -382,24 +411,3 @@ render(){
  
  
 export default Tr808; 
-
-
- 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-

@@ -18,12 +18,13 @@ constructor(props){
   super(props);
 
  
+
   this.soundPlay= (src) => {
 
    
     const intro = new Howl({
   src: ['drumloop.webm', 'intro.mp3'],
-
+  currentVol:Howler.volume(0.2)
      });
 
 intro.play();
@@ -31,12 +32,17 @@ intro.play();
 const sound= new Howl({
   src,
   loop:false,
-  volume:0.1
+  volume:0.5
   
 })
 sound.play();
 }
-     
+ 
+
+
+
+
+
 
 }
 keyPlay = () => {

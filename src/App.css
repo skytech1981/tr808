@@ -142,13 +142,6 @@ button
 
 
 
-
-
-
-
-
-
-
 button:active
 {
   background-image: radial-gradient(rgb(231, 217, 15)50%,black);
@@ -278,22 +271,7 @@ h2
 
 }
 
-.sequence
-{
-  
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(23, 23, 48);
-  border:10px solid rgb(11, 2, 32);
-}
-input[type=checkbox] {
-  margin:20px;
-  transform: scale(2.8);
-  
-}
+
 
 
 .home-title
@@ -491,11 +469,17 @@ width: 40VW;
 
 .currentVolume
 {
+  color: red;
+  background-color: grey;
   position: relative;
-  left: -140vh;
-width: 30vw;
-height: 20px;
+  left: -114.2vh;
+  top: 16vh;
+width: 100px;
+height: 1px;
 margin-left: 0;
+border: 1px solid red;
+
+transform:rotate(-90deg);
 
 }
 
@@ -507,3 +491,5 @@ background-color: rgba(65, 5, 3, 0);
 width: 100vw;
 height: 86vh;
 }
+
+
