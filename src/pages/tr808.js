@@ -192,7 +192,7 @@ const gvol = [0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0]
 
 
 
-class Tr808 extends Component {
+class Synth extends Component {
 constructor(props){
 super(props);
 
@@ -205,7 +205,7 @@ this.state = {
            clips2:audioClips2,
            clips3:audioClips3,
            clips4:audioClips4,
-           currentVol:Howler.volume(0.5),
+           //currentVol:Howler.volume(0.5),
             // rotateVol: 0
           }
           //  this.rotate = this.rotate.bind(this);
@@ -244,9 +244,9 @@ onChange=(e)=> {
 }
 
 volOnChange=(e)=> {
-  console.log(e.target.value );
-  this.setState({currentVol: gvol[e.target.value]});
-
+  console.log(e.target.value);
+  //this.setState({currentVol: gvol[e.target.value]});
+  this.props.callback(gvol[e.target.value]);
  }
  
 //  rotate=(e)=> {
@@ -383,7 +383,8 @@ rendButtonAndSound5 = () => {
 
 render(){
 
-    Howler.volume(this.state.currentVol)
+    //Howler.volume(this.state.currentVol)
+    Howler.volume(this.props.currentVol)
 
             return( 
               (
@@ -408,7 +409,7 @@ render(){
                                 <option value="pclips6">Oldies Filterd</option>
                           </select>
                           <h3 className="time">{this.state.time}</h3>
-                          <input  type="range"  min="0" max="10" onChange={this.volOnChange} className="currentVolume"   value={this.state.value} step="1"/>  
+                          <input  type="range"  min="0" max="10" onChange={this.volOnChange} className="currentVolume"   value={this.props.currentVol * 10} step="1"/>  
                          <img className="knob"  src={ require('../pages/knob.png') }/>
 
                       </div>
@@ -421,4 +422,4 @@ render(){
 
  
  
-export default Tr808; 
+export default Synth; 

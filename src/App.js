@@ -1,4 +1,4 @@
-import React , {Component } from 'react';
+import React , { useState, Component } from 'react';
 import './App.css';
 import Home from './pages/home';
 import About from './pages/about';
@@ -8,11 +8,8 @@ import {Route, BrowserRouter as Router, Link} from "react-router-dom";
 
 
 function App() {
-
-
-
-
-  
+  const [currentVol, setCurrentVol] = useState(0.5);
+  console.log(currentVol)
   return (
     <Router>
   
@@ -27,7 +24,9 @@ function App() {
           <div className="main">
           <Route path="/" component={Home}/>
           <Route path="/about" exact component={About}/>
-          <Route path="/tr808" exact component={Tr808}/>
+          <Route path="/tr808" exact /*component={Tr808}*/>
+            <Tr808 currentVol={currentVol} callback={(volume) => setCurrentVol(volume)}/>
+          </Route>
           
          </div>
   
