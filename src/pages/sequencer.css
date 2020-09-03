@@ -2,13 +2,11 @@
 
 body
 {
-    
+    position: relative;
     width: 100%;
     margin: 0px;
     padding: 0px;
     overflow: hidden; 
-    min-width:300px;
-    zoom: 1;
     touch-action: none;
     
 }
@@ -27,6 +25,7 @@ position: relative;
 
 .window
 {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,12 +61,12 @@ position: relative;
 {
   
     position: relative;
-    top: 455.5px;
+    top: 47vh;
     left: 64.2vw;
     width: 100vh;
     min-width: 4.5vh;
-     height:5px;
-     background-position: cover;
+  
+   
 }
 
 
@@ -75,12 +74,12 @@ position: relative;
 {
   
     position: relative;
-    top: 455.5px;
+    top: 47vh;
     left: 64.2vw;
     width: 100vh;
     min-width: 4.5vh;
-     height:5px;
-     background-position: cover;
+    
+   
 }
 
 
@@ -88,79 +87,84 @@ position: relative;
 {
   
     position: relative;
-    top: 455.5px;
+    top: 47vh;
     left: 64.3vw;
     width: 100vh;
     min-width: 4.5vh;
-     height:5px;
-     background-position: cover;
+
+  
 }
 
 .contain4
 {
   
     position: relative;
-    top: 455.5px;
+    top: 47vh;
     left: 64.4vw;
     width: 100vh;
     min-width: 4.5vh;
-     height:5px;
-     background-position: cover;
+    
+    
 }
 
 
 .keypad
 {
-    position: relative;
+    position: absolute;
+    width: 3vw;
+    top: 0.4vh;
+    height: 7.5vh;
+    transform:rotate(0deg);
     
-    width: 56px;
-    top: -0.6px;
-    height: 72px;
- 
 }
 .keypad:active
 {
-     height: 75px;
+    position: absolute;
+    height: 7.8vh;
+    transform:rotate(0deg);
  }
 
  .keypad2
  {
      position: absolute;
-     width: 40px;
-     top:12px;
-     height: 58px;
+     width: 2vw;
+     top: 1.3vh;
+     height: 6.1vh;
   
  }
  
  .keypad2:active
  {
-      height: 60px;
+    position: absolute;
+    height: 6.3vh;
   }
 
   .keypad3
   {
       position: absolute;
-      width: 55px;
-      top:3px;
-      height: 78px;
+      width: 2.9vw;
+      top: 0.51vh;
+      height: 7.9vh;
   }
   
   .keypad3:active
   {
-       height: 80px;
+    position: absolute;
+    height: 8.2vh;
    }
 
    .keypad4
    {
        position: absolute;
-       width: 55px;
-       top:3px;
-       height: 76px;
+       width: 2.8vw;
+       top: 0.45vh;
+       height: 7.72vh;
    }
    
    .keypad4:active
    {
-        height: 80px;
+    position: absolute;
+    height: 8vh;
     }
  
 
@@ -171,7 +175,7 @@ position: relative;
 {
     display: flex;
     justify-content: center;
-    
+    position: absolute;
      
 }
 
@@ -217,22 +221,7 @@ border-radius: 3px;
 }
 
 
-.presetLabel
- {
-     position: relative;
-     display: inline-block;
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-     width:42vw;
-    left: -97vw;
-    height: 20px;
-    border:2px solid rgb(238, 238, 238);
-    font-weight: bolder;
-    cursor: pointer;
 
-  }
-
- 
 
   .time
   {
@@ -260,16 +249,16 @@ border-radius: 3px;
       transition: 0.5s;
   }
 
-  .contain,.contain2,.contain3,.contain4
+  /* .contain,.contain2,.contain3,.contain4
   {
       
 right: 40vh;
 
-  }
+  } */
 
   .knob
   {
- width: 20px;
+ 
  position: absolute;
  left: -32.4vw;
  top: 20.2vh;
@@ -280,9 +269,8 @@ right: 40vh;
 
   .knob:active
   {
-      opacity: 1;
- width: 20px;
- position: absolute;
+  
+  position: absolute;
  left: -32.4vw;
  top: 20.2vh;
  width: 4.8vw;

@@ -506,16 +506,15 @@ width: 40VW;
   color: red;
   background-color: grey;
   position: absolute;
-  left: -42.4vh;
+  left: -42.27vh;
   top: 16vh;
-width: 100px;
+width: 5vw;
 height: 1px;
 margin-left: 0;
 border: 1px solid red;
-
 transform:rotate(-90deg);
-
 }
+
 
 .parts
 {
