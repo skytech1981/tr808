@@ -1,9 +1,7 @@
 import React ,{Component } from 'react';
-
 import {Route, BrowserRouter as Router, Link} from "react-router-dom";
 import '../pages/sequencer.css';
 import Synth from './Synth';
-
 
 
 class Tr808 extends Component {
@@ -11,6 +9,8 @@ constructor(props){
 super(props);
 
 let time=new Date().toLocaleTimeString()
+
+
 
 this.state = {
 

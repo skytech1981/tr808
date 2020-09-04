@@ -4,11 +4,11 @@ import Particles from "react-particles-js";
 export default () => (
   <div
     style={{
-      position: "absolute",
-      top: 0,
+      position: "relative",
+      top: 20,
       left: 0,
       width: "100%",
-      height: "100%"
+      height: "70%"
     }}
   >
     <Particles
@@ -34,7 +34,7 @@ export default () => (
               nb_sides: 4
             },
             image: {
-              src: "img/logo.svg",
+              src: "src={ require('../logo.svg') }",
               width: 100,
               height: 100
             }

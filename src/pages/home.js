@@ -2,8 +2,8 @@ import React , { useState } from 'react';
 import '../App.css';
 import a from '../drums/fx2.wav';
 import {Howl,Howler} from 'howler';
-import Particles from 'react-particles-js';
-
+// import Particles from 'react-particles-js';
+import Particles from './ParticlesComponent';
 
 
 const drumLoops =   [ 
