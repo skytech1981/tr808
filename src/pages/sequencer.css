@@ -44,7 +44,7 @@ position: relative;
     top: 9.25vh;;
     width: 10vw;
     height: 50.6vh;
-    
+    background-position: cover;
     
    
 }
@@ -67,7 +67,7 @@ position: relative;
     width: 100vh;
     min-width: 4.5vh;
      height:5px;
-     
+     background-position: cover;
 }
 
 
@@ -80,6 +80,7 @@ position: relative;
     width: 100vh;
     min-width: 4.5vh;
      height:5px;
+     background-position: cover;
 }
 
 
@@ -92,6 +93,7 @@ position: relative;
     width: 100vh;
     min-width: 4.5vh;
      height:5px;
+     background-position: cover;
 }
 
 .contain4
@@ -103,6 +105,7 @@ position: relative;
     width: 100vh;
     min-width: 4.5vh;
      height:5px;
+     background-position: cover;
 }
 
 
