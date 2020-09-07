@@ -11,9 +11,9 @@ function App() {
   const [currentVol, setCurrentVol] = useState(0.5);
   console.log(currentVol)
   return (
-    <Router>
-  
-       <nav>
+    <div>
+        <Router>
+         <nav>
           <ul className="menulist">
             <li className="li"><Link to="/home" style={{color:"white",paddingLeft: 13, textDecoration: 'none'}}>Home</Link></li>
             <li className="li"><Link to="/about" style={{color:"white",paddingLeft: 13, textDecoration: 'none'}}>About</Link></li>
@@ -29,8 +29,10 @@ function App() {
           </Route>
           
          </div>
+         
   
     </Router>
+    </div>
   );
 }
 

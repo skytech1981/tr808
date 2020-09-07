@@ -20,7 +20,7 @@
   width: 100vw;
   height: 86vh;
     justify-content: center;
-background:url("./pages/1.png");
+background:url("/images/1.png");
 animation: Slide 20s infinite; 
 image-orientation: 20deg flip;
 }
@@ -28,16 +28,16 @@ image-orientation: 20deg flip;
 
 @keyframes Slide {
 25%{
-background:url("./pages/2.jpg");
+background:url("/images/2.jpg");
 }
 50%{
-  background:url("./pages/3.jpg");
+  background:url("/images/3.jpg");
 }
 75%{
-  background:url("./pages/10.jpg");
+  background:url("/images/10.jpg");
 }
 100%{
-  background:url("./pages/1.png");
+  background:url("/images/1.png");
 } 
 
 }
