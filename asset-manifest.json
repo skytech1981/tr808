@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/tr808/static/css/main.ed271f1b.chunk.css",
-    "main.js": "/tr808/static/js/main.e5c0ffbc.chunk.js",
-    "main.js.map": "/tr808/static/js/main.e5c0ffbc.chunk.js.map",
+    "main.css": "/tr808/static/css/main.5d56c266.chunk.css",
+    "main.js": "/tr808/static/js/main.f1609ef1.chunk.js",
+    "main.js.map": "/tr808/static/js/main.f1609ef1.chunk.js.map",
     "runtime-main.js": "/tr808/static/js/runtime-main.3f8a2690.js",
     "runtime-main.js.map": "/tr808/static/js/runtime-main.3f8a2690.js.map",
     "static/js/2.6acc52e8.chunk.js": "/tr808/static/js/2.6acc52e8.chunk.js",
     "static/js/2.6acc52e8.chunk.js.map": "/tr808/static/js/2.6acc52e8.chunk.js.map",
     "index.html": "/tr808/index.html",
-    "precache-manifest.cd61408c84a34a8744183b344c55ff46.js": "/tr808/precache-manifest.cd61408c84a34a8744183b344c55ff46.js",
+    "precache-manifest.990924e910ef1f62b240b1c33fb53564.js": "/tr808/precache-manifest.990924e910ef1f62b240b1c33fb53564.js",
     "service-worker.js": "/tr808/service-worker.js",
-    "static/css/main.ed271f1b.chunk.css.map": "/tr808/static/css/main.ed271f1b.chunk.css.map",
+    "static/css/main.5d56c266.chunk.css.map": "/tr808/static/css/main.5d56c266.chunk.css.map",
     "static/js/2.6acc52e8.chunk.js.LICENSE.txt": "/tr808/static/js/2.6acc52e8.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/tr808/static/media/font3.ac9243ea.ttf",
     "static/media/1234.jpg": "/tr808/static/media/1234.4aca041c.jpg",
     "static/media/Perc.wav": "/tr808/static/media/Perc.1337a3ec.wav",
     "static/media/chihat.wav": "/tr808/static/media/chihat.7dd6071b.wav",
@@ -19,7 +20,6 @@
     "static/media/clave.wav": "/tr808/static/media/clave.71a29610.wav",
     "static/media/congalo.wav": "/tr808/static/media/congalo.899acde6.wav",
     "static/media/cowba.wav": "/tr808/static/media/cowba.3cec3abd.wav",
-    "static/media/App.css": "/tr808/static/media/font3.ac9243ea.ttf",
     "static/media/fx2.wav": "/tr808/static/media/fx2.4ae2907c.wav",
     "static/media/hatt.wav": "/tr808/static/media/hatt.d4fa359c.wav",
     "static/media/howlerjs.png": "/tr808/static/media/howlerjs.d2551738.png",
@@ -40,7 +40,7 @@
   "entrypoints": [
     "static/js/runtime-main.3f8a2690.js",
     "static/js/2.6acc52e8.chunk.js",
-    "static/css/main.ed271f1b.chunk.css",
-    "static/js/main.e5c0ffbc.chunk.js"
+    "static/css/main.5d56c266.chunk.css",
+    "static/js/main.f1609ef1.chunk.js"
   ]
 }
